@@ -1,0 +1,256 @@
+\begin{thebibliography}{10}
+
+\bibitem{berthier2011dynamic}
+Ludovic Berthier.
+\newblock Dynamic heterogeneity in amorphous materials.
+\newblock {\em arXiv preprint arXiv:1106.1739}, 2011.
+
+\bibitem{angell1995formation}
+C~Austen Angell.
+\newblock Formation of glasses from liquids and biopolymers.
+\newblock {\em Science}, 267(5206):1924--1935, 1995.
+
+\bibitem{sastry1998signatures}
+Srikanth Sastry, Pablo~G Debenedetti, and Frank~H Stillinger.
+\newblock Signatures of distinct dynamical regimes in the energy landscape of a
+  glass-forming liquid.
+\newblock {\em Nature}, 393(6685):554--557, 1998.
+
+\bibitem{debenedetti2001supercooled}
+Pablo~G Debenedetti and Frank~H Stillinger.
+\newblock Supercooled liquids and the glass transition.
+\newblock {\em Nature}, 410(6825):259--267, 2001.
+
+\bibitem{banerjee2017determination}
+Atreyee Banerjee, Manoj~Kumar Nandi, Srikanth Sastry, and Sarika
+  Maitra~Bhattacharyya.
+\newblock Determination of onset temperature from the entropy for fragile to
+  strong liquids.
+\newblock {\em The Journal of chemical physics}, 147(2):024504, 2017.
+
+\bibitem{folena2020rethinking}
+Giampaolo Folena, Silvio Franz, and Federico Ricci-Tersenghi.
+\newblock Rethinking mean-field glassy dynamics and its relation with the
+  energy landscape: The surprising case of the spherical mixed p-spin model.
+\newblock {\em Physical Review X}, 10(3):031045, 2020.
+
+\bibitem{keys2011excitations}
+Aaron~S Keys, Lester~O Hedges, Juan~P Garrahan, Sharon~C Glotzer, and David
+  Chandler.
+\newblock Excitations are localized and relaxation is hierarchical in
+  glass-forming liquids.
+\newblock {\em Physical Review X}, 1(2):021013, 2011.
+
+\bibitem{ediger2000spatially}
+Mark~D Ediger.
+\newblock Spatially heterogeneous dynamics in supercooled liquids.
+\newblock {\em Annual review of physical chemistry}, 51(1):99--128, 2000.
+
+\bibitem{berthier2011dynamical}
+Ludovic Berthier, Giulio Biroli, Jean-Philippe Bouchaud, Luca Cipelletti, and
+  Wim van Saarloos.
+\newblock {\em Dynamical heterogeneities in glasses, colloids, and granular
+  media}, volume 150.
+\newblock OUP Oxford, 2011.
+
+\bibitem{ediger1996supercooled}
+Mark~D Ediger, C~Austen Angell, and Sidney~R Nagel.
+\newblock Supercooled liquids and glasses.
+\newblock {\em The journal of physical chemistry}, 100(31):13200--13212, 1996.
+
+\bibitem{pedersen2018phase}
+Ulf~R Pedersen, Thomas~B Schr{\o}der, and Jeppe~C Dyre.
+\newblock Phase diagram of kob-andersen-type binary lennard-jones mixtures.
+\newblock {\em Physical review letters}, 120(16):165501, 2018.
+
+\bibitem{berthier2007structure}
+Ludovic Berthier and Robert~L Jack.
+\newblock Structure and dynamics of glass formers: Predictability at large
+  length scales.
+\newblock {\em Physical Review E}, 76(4):041509, 2007.
+
+\bibitem{kawasaki2007correlation}
+Takeshi Kawasaki, Takeaki Araki, and Hajime Tanaka.
+\newblock Correlation between dynamic heterogeneity and medium-range order in
+  two-dimensional glass-forming liquids.
+\newblock {\em Physical review letters}, 99(21):215701, 2007.
+
+\bibitem{patrick2008direct}
+C~Patrick~Royall, Stephen~R Williams, Takehiro Ohtsuka, and Hajime Tanaka.
+\newblock Direct observation of a local structural mechanism for dynamic
+  arrest.
+\newblock {\em Nature materials}, 7(7):556--561, 2008.
+
+\bibitem{jack2014information}
+Robert~L Jack, Andrew~J Dunleavy, and C~Patrick Royall.
+\newblock Information-theoretic measurements of coupling between structure and
+  dynamics in glass formers.
+\newblock {\em Physical review letters}, 113(9):095703, 2014.
+
+\bibitem{manning2011vibrational}
+M~Lisa Manning and Andrea~J Liu.
+\newblock Vibrational modes identify soft spots in a sheared disordered
+  packing.
+\newblock {\em Physical Review Letters}, 107(10):108302, 2011.
+
+\bibitem{widmer2008irreversible}
+Asaph Widmer-Cooper, Heidi Perry, Peter Harrowell, and David~R Reichman.
+\newblock Irreversible reorganization in a supercooled liquid originates from
+  localized soft modes.
+\newblock {\em Nature Physics}, 4(9):711--715, 2008.
+
+\bibitem{cubuk2015identifying}
+Ekin~D Cubuk, Samuel~Stern Schoenholz, Jennifer~M Rieser, Brad~Dean Malone,
+  Joerg Rottler, Douglas~J Durian, Efthimios Kaxiras, and Andrea~J Liu.
+\newblock Identifying structural flow defects in disordered solids using
+  machine-learning methods.
+\newblock {\em Physical review letters}, 114(10):108001, 2015.
+
+\bibitem{schoenholz2016structural}
+Samuel~S Schoenholz, Ekin~D Cubuk, Daniel~M Sussman, Efthimios Kaxiras, and
+  Andrea~J Liu.
+\newblock A structural approach to relaxation in glassy liquids.
+\newblock {\em Nature Physics}, 12(5):469--471, 2016.
+
+\bibitem{sussman2017disconnecting}
+Daniel~M Sussman, Samuel~S Schoenholz, Ekin~D Cubuk, and Andrea~J Liu.
+\newblock Disconnecting structure and dynamics in glassy thin films.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  114(40):10601--10605, 2017.
+
+\bibitem{bapst2020unveiling}
+Victor Bapst, Thomas Keck, A~Grabska-Barwi{\'n}ska, Craig Donner, Ekin~Dogus
+  Cubuk, Samuel~S Schoenholz, Annette Obika, Alexander~WR Nelson, Trevor Back,
+  Demis Hassabis, et~al.
+\newblock Unveiling the predictive power of static structure in glassy systems.
+\newblock {\em Nature Physics}, 16(4):448--454, 2020.
+
+\bibitem{boattini2020autonomously}
+Emanuele Boattini, Susana Mar{\'\i}n-Aguilar, Saheli Mitra, Giuseppe Foffi,
+  Frank Smallenburg, and Laura Filion.
+\newblock Autonomously revealing hidden local structures in supercooled
+  liquids.
+\newblock {\em Nature communications}, 11(1):1--9, 2020.
+
+\bibitem{boattini2021averaging}
+Emanuele Boattini, Frank Smallenburg, and Laura Filion.
+\newblock Averaging local structure to predict the dynamic propensity in
+  supercooled liquids.
+\newblock {\em Physical Review Letters}, 127(8):088007, 2021.
+
+\bibitem{cubuk2020unifying}
+Ekin~D Cubuk, Andrea~J Liu, Efthimios Kaxiras, and Samuel~S Schoenholz.
+\newblock Unifying framework for strong and fragile liquids via machine
+  learning: a study of liquid silica.
+\newblock {\em arXiv preprint arXiv:2008.09681}, 2020.
+
+\bibitem{jung2022predicting}
+Gerhard Jung, Giulio Biroli, and Ludovic Berthier.
+\newblock Predicting dynamic heterogeneity in glass-forming liquids by
+  physics-informed machine learning.
+\newblock {\em arXiv preprint arXiv:2210.16623}, 2022.
+
+\bibitem{tah2021quantifying}
+Indrajit Tah, Tristan~A Sharp, Andrea~J Liu, and Daniel~M Sussman.
+\newblock Quantifying the link between local structure and cellular
+  rearrangements using information in models of biological tissues.
+\newblock {\em Soft Matter}, 2021.
+
+\bibitem{kob1995testing}
+Walter Kob and Hans~C Andersen.
+\newblock Testing mode-coupling theory for a supercooled binary lennard-jones
+  mixture i: The van hove correlation function.
+\newblock {\em Physical Review E}, 51(5):4626, 1995.
+
+\bibitem{frenkel2023understanding}
+Daan Frenkel and Berend Smit.
+\newblock {\em Understanding molecular simulation: from algorithms to
+  applications}.
+\newblock Elsevier, 2023.
+
+\bibitem{anderson2020hoomd}
+Joshua~A Anderson, Jens Glaser, and Sharon~C Glotzer.
+\newblock Hoomd-blue: A python package for high-performance molecular dynamics
+  and hard particle monte carlo simulations.
+\newblock {\em Computational Materials Science}, 173:109363, 2020.
+
+\bibitem{behler2007generalized}
+J{\"o}rg Behler and Michele Parrinello.
+\newblock Generalized neural-network representation of high-dimensional
+  potential-energy surfaces.
+\newblock {\em Physical review letters}, 98(14):146401, 2007.
+
+\bibitem{hsu2003practical}
+Chih-Wei Hsu, Chih-Chung Chang, Chih-Jen Lin, et~al.
+\newblock A practical guide to support vector classification, 2003.
+
+\bibitem{candelier2009building}
+Raphael Candelier, Olivier Dauchot, and Giulio Biroli.
+\newblock Building blocks of dynamical heterogeneities in dense granular media.
+\newblock {\em Physical review letters}, 102(8):088001, 2009.
+
+\bibitem{pedregosa2011scikit}
+Fabian Pedregosa, Ga{\"e}l Varoquaux, Alexandre Gramfort, Vincent Michel,
+  Bertrand Thirion, Olivier Grisel, Mathieu Blondel, Peter Prettenhofer, Ron
+  Weiss, Vincent Dubourg, et~al.
+\newblock Scikit-learn: Machine learning in python.
+\newblock {\em the Journal of machine Learning research}, 12:2825--2830, 2011.
+
+\bibitem{bocquet2009kinetic}
+Lyd{\'e}ric Bocquet, Annie Colin, and Armand Ajdari.
+\newblock Kinetic theory of plastic flow in soft glassy materials.
+\newblock {\em Physical review letters}, 103(3):036001, 2009.
+
+\bibitem{hanggi1990reaction}
+Peter H{\"a}nggi, Peter Talkner, and Michal Borkovec.
+\newblock Reaction-rate theory: fifty years after kramers.
+\newblock {\em Reviews of modern physics}, 62(2):251, 1990.
+
+\bibitem{tah2022fragility}
+Indrajit Tah, Sean~A Ridout, and Andrea~J Liu.
+\newblock Fragility in glassy liquids: A structural approach based on machine
+  learning.
+\newblock {\em arXiv preprint arXiv:2205.07187}, 2022.
+
+\bibitem{royall2015role}
+C~Patrick Royall and Stephen~R Williams.
+\newblock The role of local structure in dynamical arrest.
+\newblock {\em Physics Reports}, 560:1--75, 2015.
+
+\bibitem{testard2014intermittent}
+Vincent Testard, Ludovic Berthier, and Walter Kob.
+\newblock Intermittent dynamics and logarithmic domain growth during the
+  spinodal decomposition of a glass-forming liquid.
+\newblock {\em The Journal of chemical physics}, 140(16):164502, 2014.
+
+\bibitem{sussman2018anomalous}
+Daniel~M Sussman, M~Paoluzzi, M~Cristina Marchetti, and M~Lisa Manning.
+\newblock Anomalous glassy dynamics in simple models of dense biological
+  tissue.
+\newblock {\em EPL (Europhysics Letters)}, 121(3):36001, 2018.
+
+\bibitem{li2021softness}
+Yan-Wei Li, Leon Loh~Yeong Wei, Matteo Paoluzzi, and Massimo~Pica Ciamarra.
+\newblock Softness, anomalous dynamics, and fractal-like energy landscape in
+  model cell tissues.
+\newblock {\em Physical Review E}, 103(2):022607, 2021.
+
+\bibitem{pinto2022hierarchical}
+Diogo~EP Pinto, Daniel~M Sussman, Margarida M~Telo da~Gama, and Nuno~AM
+  Ara{\'u}jo.
+\newblock Hierarchical structure of the energy landscape in the voronoi model
+  of dense tissue.
+\newblock {\em Physical Review Research}, 4(2):023187, 2022.
+
+\bibitem{alkemade2022comparing}
+Rinske~M Alkemade, Emanuele Boattini, Laura Filion, and Frank Smallenburg.
+\newblock Comparing machine learning techniques for predicting glassy dynamics.
+\newblock {\em The Journal of Chemical Physics}, 156(20):204503, 2022.
+
+\bibitem{obadiyaDataset2022}
+Tomilola~M Obadiya and Daniel~M Sussman.
+\newblock Dataset for ``does fluid structure encode predictions of glassy
+  dynamics?''.
+\newblock \url{http://dx.doi.org/110.5281/zenodo.7469766}.
+
+\end{thebibliography}

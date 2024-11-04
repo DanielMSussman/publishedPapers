@@ -1,0 +1,369 @@
+\providecommand*{\mcitethebibliography}{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+{\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{46}
+\providecommand*{\natexlab}[1]{#1}
+\providecommand*{\mciteSetBstSublistMode}[1]{}
+\providecommand*{\mciteSetBstMaxWidthForm}[2]{}
+\providecommand*{\mciteBstWouldAddEndPuncttrue}
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*{\mciteBstWouldAddEndPunctfalse}
+  {\let\EndOfBibitem\relax}
+\providecommand*{\mciteSetBstMidEndSepPunct}[3]{}
+\providecommand*{\mciteSetBstSublistLabelBeginEnd}[3]{}
+\providecommand*{\EndOfBibitem}{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}
+{(\emph{\alph{mcitesubitemcount}})}
+\mciteSetBstSublistLabelBeginEnd{\mcitemaxwidthsubitemform\space}
+{\relax}{\relax}
+
+\bibitem[Dahmann \emph{et~al.}(2011)Dahmann, Oates, and
+  Brand]{dahmann2011boundary}
+C.~Dahmann, A.~C. Oates and M.~Brand, \emph{Nature Reviews Genetics}, 2011,
+  \textbf{12}, 43--55\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Yang and Levine(2020)]{yang2020leader}
+Y.~Yang and H.~Levine, \emph{Physical biology}, 2020, \textbf{17}, 046003\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Pawlizak \emph{et~al.}(2015)Pawlizak, Fritsch, Grosser, Ahrens,
+  Thalheim, Riedel, Kie{\ss}ling, Oswald, Zink,
+  Manning,\emph{et~al.}]{pawlizak2015testing}
+S.~Pawlizak, A.~W. Fritsch, S.~Grosser, D.~Ahrens, T.~Thalheim, S.~Riedel,
+  T.~R. Kie{\ss}ling, L.~Oswald, M.~Zink, M.~L. Manning \emph{et~al.},
+  \emph{New Journal of Physics}, 2015, \textbf{17}, 083049\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Yanagida \emph{et~al.}(2022)Yanagida, Corujo-Simon, Revell, Sahu,
+  Stirparo, Aspalter, Winkel, Peters, De~Belly,
+  Cassani,\emph{et~al.}]{yanagida2022cell}
+A.~Yanagida, E.~Corujo-Simon, C.~K. Revell, P.~Sahu, G.~G. Stirparo, I.~M.
+  Aspalter, A.~K. Winkel, R.~Peters, H.~De~Belly, D.~A. Cassani \emph{et~al.},
+  \emph{Cell}, 2022, \textbf{185}, 777--793\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Steinberg(1962)]{steinberg1962mechanism}
+M.~S. Steinberg, \emph{Proceedings of the National Academy of Sciences}, 1962,
+  \textbf{48}, 1577--1582\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Steinberg(2007)]{steinberg2007differential}
+M.~S. Steinberg, \emph{Current opinion in genetics \& development}, 2007,
+  \textbf{17}, 281--286\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Amack and Manning(2012)]{amack2012knowing}
+J.~D. Amack and M.~L. Manning, \emph{Science}, 2012, \textbf{338},
+  212--215\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Manning \emph{et~al.}(2010)Manning, Foty, Steinberg, and
+  Schoetz]{manning2010coaction}
+M.~L. Manning, R.~A. Foty, M.~S. Steinberg and E.-M. Schoetz, \emph{Proceedings
+  of the National Academy of Sciences}, 2010, \textbf{107}, 12517--12522\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Youssef \emph{et~al.}(2011)Youssef, Nurse, Freund, and
+  Morgan]{youssef2011quantification}
+J.~Youssef, A.~K. Nurse, L.~Freund and J.~R. Morgan, \emph{Proceedings of the
+  National Academy of Sciences}, 2011, \textbf{108}, 6993--6998\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Krieg \emph{et~al.}(2008)Krieg, Arboleda-Estudillo, Puech, K{\"a}fer,
+  Graner, M{\"u}ller, and Heisenberg]{krieg2008tensile}
+M.~Krieg, Y.~Arboleda-Estudillo, P.-H. Puech, J.~K{\"a}fer, F.~Graner,
+  D.~M{\"u}ller and C.-P. Heisenberg, \emph{Nature cell biology}, 2008,
+  \textbf{10}, 429--436\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Brodland(2002)]{brodland2002differential}
+G.~W. Brodland, \emph{J. Biomech. Eng.}, 2002, \textbf{124}, 188--197\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wiseman(1977)]{wiseman1977can}
+L.~L. Wiseman, \emph{Developmental Biology}, 1977, \textbf{58}, 204--211\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ninomiya \emph{et~al.}(2012)Ninomiya, David, Damm, Fagotto, Niessen,
+  and Winklbauer]{ninomiya2012cadherin}
+H.~Ninomiya, R.~David, E.~W. Damm, F.~Fagotto, C.~M. Niessen and R.~Winklbauer,
+  \emph{Journal of Cell Science}, 2012, \textbf{125}, 1877--1883\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Monier \emph{et~al.}(2010)Monier, P{\'e}lissier-Monier, Brand, and
+  Sanson]{monier2010actomyosin}
+B.~Monier, A.~P{\'e}lissier-Monier, A.~H. Brand and B.~Sanson, \emph{Nature
+  cell biology}, 2010, \textbf{12}, 60--65\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Honda(1983)]{honda1983geometrical}
+H.~Honda, \emph{International review of cytology}, 1983, \textbf{81},
+  191--248\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bi \emph{et~al.}(2016)Bi, Yang, Marchetti, and
+  Manning]{bi2016motility}
+D.~Bi, X.~Yang, M.~C. Marchetti and M.~L. Manning, \emph{Physical Review X},
+  2016, \textbf{6}, 021011\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Alt \emph{et~al.}(2017)Alt, Ganguly, and Salbreux]{alt2017vertex}
+S.~Alt, P.~Ganguly and G.~Salbreux, \emph{Philosophical Transactions of the
+  Royal Society B: Biological Sciences}, 2017, \textbf{372}, 20150520\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sussman \emph{et~al.}(2018)Sussman, Schwarz, Marchetti, and
+  Manning]{sussman2018soft}
+D.~M. Sussman, J.~Schwarz, M.~C. Marchetti and M.~L. Manning, \emph{Physical
+  review letters}, 2018, \textbf{120}, 058001\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sahu \emph{et~al.}(2021)Sahu, Schwarz, and Manning]{sahu2021geometric}
+P.~Sahu, J.~Schwarz and M.~L. Manning, \emph{New Journal of Physics}, 2021,
+  \textbf{23}, 093043\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lawson-Keister \emph{et~al.}(2024)Lawson-Keister, Zhang, Nazari,
+  Fagotto, and Manning]{lawson2024differences}
+E.~Lawson-Keister, T.~Zhang, F.~Nazari, F.~Fagotto and M.~L. Manning,
+  \emph{PLOS Computational Biology}, 2024, \textbf{20}, e1011724\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kardar(2007)]{kardar2007statistical}
+M.~Kardar, \emph{Statistical physics of fields}, Cambridge University Press,
+  2007\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Guan \emph{et~al.}(2023)Guan, Lin, Chen, Lv, Li, and
+  Feng]{guan2023interfacial}
+L.-Y. Guan, S.-Z. Lin, P.-C. Chen, J.-Q. Lv, B.~Li and X.-Q. Feng, \emph{ACS
+  nano}, 2023, \textbf{17}, 24668--24684\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sussman(2017)]{sussman2017cellgpu}
+D.~M. Sussman, \emph{Computer Physics Communications}, 2017, \textbf{219},
+  400--406\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bi \emph{et~al.}(2015)Bi, Lopez, Schwarz, and Manning]{bi2015density}
+D.~Bi, J.~Lopez, J.~M. Schwarz and M.~L. Manning, \emph{Nature Physics}, 2015,
+  \textbf{11}, 1074--1079\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sides \emph{et~al.}(1999)Sides, Grest, and
+  Lacasse]{sides1999capillary}
+S.~W. Sides, G.~S. Grest and M.-D. Lacasse, \emph{Physical Review E}, 1999,
+  \textbf{60}, 6708\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rowlinson and Widom(2013)]{rowlinson2013molecular}
+J.~S. Rowlinson and B.~Widom, \emph{Molecular theory of capillarity}, Courier
+  Corporation, 2013\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ross(1995)]{ross1995stochastic}
+S.~M. Ross, \emph{Stochastic processes}, John Wiley \& Sons, 1995\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Goldenfeld(2018)]{goldenfeld2018lectures}
+N.~Goldenfeld, \emph{Lectures on phase transitions and the renormalization
+  group}, CRC Press, 2018\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Yan and Bi(2019)]{yan2019multicellular}
+L.~Yan and D.~Bi, \emph{Physical Review X}, 2019, \textbf{9}, 011029\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mart{\'\i}nez-Calvo \emph{et~al.}(2022)Mart{\'\i}nez-Calvo,
+  Bhattacharjee, Bay, Luu, Hancock, Wingreen, and
+  Datta]{martinez2022morphological}
+A.~Mart{\'\i}nez-Calvo, T.~Bhattacharjee, R.~K. Bay, H.~N. Luu, A.~M. Hancock,
+  N.~S. Wingreen and S.~S. Datta, \emph{Proceedings of the National Academy of
+  Sciences}, 2022, \textbf{119}, e2208019119\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Del~Junco and Vaikuntanathan(2019)]{del2019interface}
+C.~Del~Junco and S.~Vaikuntanathan, \emph{The Journal of Chemical Physics},
+  2019, \textbf{150}, 094708\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Yue \emph{et~al.}(2024)Yue, Burton, and Sussman]{yue2024coalescing}
+H.~Yue, J.~C. Burton and D.~M. Sussman, \emph{Physical Review Research}, 2024,
+  \textbf{6}, 023115\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Shinozaki(1993)]{shinozaki1993dispersion}
+A.~Shinozaki, \emph{Physical Review E}, 1993, \textbf{48}, 1984\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bray \emph{et~al.}(2001)Bray, Cavagna, and
+  Travasso]{bray2001interface}
+A.~J. Bray, A.~Cavagna and R.~D. Travasso, \emph{Physical Review E}, 2001,
+  \textbf{65}, 016104\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Fausti \emph{et~al.}(2021)Fausti, Tjhung, Cates, and
+  Nardini]{fausti2021capillary}
+G.~Fausti, E.~Tjhung, M.~Cates and C.~Nardini, \emph{Physical review letters},
+  2021, \textbf{127}, 068001\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Besse \emph{et~al.}(2023)Besse, Fausti, Cates, Delamotte, and
+  Nardini]{besse2023interface}
+M.~Besse, G.~Fausti, M.~E. Cates, B.~Delamotte and C.~Nardini, \emph{Physical
+  Review Letters}, 2023, \textbf{130}, 187102\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Caballero \emph{et~al.}(2024)Caballero, Maitra, and
+  Nardini]{caballero2024interface}
+F.~Caballero, A.~Maitra and C.~Nardini, \emph{arXiv preprint arXiv:2409.02288},
+  2024\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Boromand \emph{et~al.}(2018)Boromand, Signoriello, Ye, O’Hern, and
+  Shattuck]{boromand2018jamming}
+A.~Boromand, A.~Signoriello, F.~Ye, C.~S. O’Hern and M.~D. Shattuck,
+  \emph{Physical review letters}, 2018, \textbf{121}, 248003\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Willis and Freund(2010)]{willis2010thermal}
+A.~Willis and J.~Freund, \emph{Physics of fluids}, 2010, \textbf{22},
+  022002\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Shang \emph{et~al.}(2011)Shang, Voulgarakis, and
+  Chu]{shang2011fluctuating}
+B.~Z. Shang, N.~K. Voulgarakis and J.-W. Chu, \emph{The Journal of chemical
+  physics}, 2011, \textbf{135}, 044111\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sussman and Merkel(2018)]{sussman2018no}
+D.~M. Sussman and M.~Merkel, \emph{Soft matter}, 2018, \textbf{14},
+  3397--3403\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jacinto \emph{et~al.}(2000)Jacinto, Wood, Balayo, Turmaine,
+  Martinez-Arias, and Martin]{jacinto2000dynamic}
+A.~Jacinto, W.~Wood, T.~Balayo, M.~Turmaine, A.~Martinez-Arias and P.~Martin,
+  \emph{Current Biology}, 2000, \textbf{10}, 1420--1426\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Zhang and Saunders(2021)]{zhang2021mechanical}
+S.~Zhang and T.~Saunders, Seminars in Cell \& Developmental Biology, 2021, pp.
+  75--84\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Heinrich \emph{et~al.}(2022)Heinrich, Alert, Wolf, Ko{\v{s}}mrlj, and
+  Cohen]{heinrich2022self}
+M.~A. Heinrich, R.~Alert, A.~E. Wolf, A.~Ko{\v{s}}mrlj and D.~J. Cohen,
+  \emph{Nature communications}, 2022, \textbf{13}, 4026\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Landsberg \emph{et~al.}(2009)Landsberg, Farhadifar, Ranft, Umetsu,
+  Widmann, Bittig, Said, J{\"u}licher, and Dahmann]{landsberg2009increased}
+K.~P. Landsberg, R.~Farhadifar, J.~Ranft, D.~Umetsu, T.~J. Widmann, T.~Bittig,
+  A.~Said, F.~J{\"u}licher and C.~Dahmann, \emph{Current Biology}, 2009,
+  \textbf{19}, 1950--1955\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Iijima \emph{et~al.}(2020)Iijima, Sato, Kuranaga, and
+  Umetsu]{iijima2020differential}
+N.~Iijima, K.~Sato, E.~Kuranaga and D.~Umetsu, \emph{Nature Communications},
+  2020, \textbf{11}, 6320\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

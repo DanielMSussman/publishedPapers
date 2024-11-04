@@ -1,0 +1,638 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\providecommand{\noopsort}[1]{}\providecommand{\singleletter}[1]{#1}%
+\begin{thebibliography}{50}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Wensink}\ \emph {et~al.}(2012)\citenamefont
+  {Wensink}, \citenamefont {Dunkel}, \citenamefont {Heidenreich}, \citenamefont
+  {Drescher}, \citenamefont {Golstein}, \citenamefont {L$\Ddot{\text{o}}$wen},\
+  and\ \citenamefont {Yeomans}}]{2012_Wensink}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Wensink}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Dunkel}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Heidenreich}}, \bibinfo
+  {author} {\bibfnamefont {K.}~\bibnamefont {Drescher}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Golstein}}, \bibinfo {author}
+  {\bibfnamefont {H.}~\bibnamefont {L$\Ddot{\text{o}}$wen}},\ and\ \bibinfo
+  {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Yeomans}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {PNAS}\ }\textbf {\bibinfo
+  {volume} {109}},\ \bibinfo {pages} {14308} (\bibinfo {year}
+  {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sumino}\ \emph {et~al.}(2012)\citenamefont {Sumino},
+  \citenamefont {Nagai}, \citenamefont {Shitaka}, \citenamefont {Tanak},
+  \citenamefont {K}, \citenamefont {Chat\'e},\ and\ \citenamefont
+  {Oiwa}}]{2012_Nagai}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Sumino}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Nagai}},
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Shitaka}}, \bibinfo
+  {author} {\bibfnamefont {D.}~\bibnamefont {Tanak}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {K}}, \bibinfo {author} {\bibfnamefont
+  {H.}~\bibnamefont {Chat\'e}},\ and\ \bibinfo {author} {\bibfnamefont
+  {K.}~\bibnamefont {Oiwa}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature}\ }\textbf {\bibinfo {volume} {438}},\ \bibinfo {pages}
+  {448} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Xu}\ and\ \citenamefont {Wu}(2024)}]{xu2024self}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Xu}}\ and\ \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Wu}},\
+  }\bibfield  {title} {\bibinfo {title} {Self-enhanced mobility enables vortex
+  pattern formation in living matter},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nature}\ ,\ \bibinfo {pages} {1}} (\bibinfo {year}
+  {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chen}\ \emph {et~al.}(2017)\citenamefont {Chen},
+  \citenamefont {Liu}, \citenamefont {Shi}, \citenamefont {Chat\'e},\ and\
+  \citenamefont {Wu}}]{2017_Chen}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Chen}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Liu}}, \bibinfo
+  {author} {\bibfnamefont {X.}~\bibnamefont {Shi}}, \bibinfo {author}
+  {\bibfnamefont {H.}~\bibnamefont {Chat\'e}},\ and\ \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Wu}},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo {volume} {542}},\ \bibinfo
+  {pages} {210} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Riedel}\ \emph {et~al.}(2005)\citenamefont {Riedel},
+  \citenamefont {Kruse},\ and\ \citenamefont {Howard}}]{riedel2005self}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~H.}\ \bibnamefont
+  {Riedel}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Kruse}},\ and\
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Howard}},\ }\bibfield
+  {title} {\bibinfo {title} {A self-organized vortex array of hydrodynamically
+  entrained sperm cells},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Science}\ }\textbf {\bibinfo {volume} {309}},\ \bibinfo {pages}
+  {300} (\bibinfo {year} {2005})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Creppy}\ \emph {et~al.}(2015)\citenamefont {Creppy},
+  \citenamefont {Praud}, \citenamefont {Druart}, \citenamefont {Kohnke},\ and\
+  \citenamefont {Plourabou{\'e}}}]{creppy2015turbulence}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Creppy}}, \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Praud}},
+  \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Druart}}, \bibinfo
+  {author} {\bibfnamefont {P.~L.}\ \bibnamefont {Kohnke}},\ and\ \bibinfo
+  {author} {\bibfnamefont {F.}~\bibnamefont {Plourabou{\'e}}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review E}\ }\textbf
+  {\bibinfo {volume} {92}},\ \bibinfo {pages} {032722} (\bibinfo {year}
+  {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zaferani}\ and\ \citenamefont
+  {Abbaspourrad}(2023)}]{zaferani2023biphasic}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Zaferani}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Abbaspourrad}},\ }\bibfield  {title} {\bibinfo {title} {Biphasic
+  chemokinesis of mammalian sperm},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo {volume}
+  {130}},\ \bibinfo {pages} {248401} (\bibinfo {year} {2023})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Qu}\ \emph {et~al.}(2021)\citenamefont {Qu},
+  \citenamefont {Chen}, \citenamefont {Guo}, \citenamefont {Ma}, \citenamefont
+  {Lu}, \citenamefont {Shi}, \citenamefont {Liu}, \citenamefont {Zhou},
+  \citenamefont {Noda}, \citenamefont {Qian}, \citenamefont {Zhang},
+  \citenamefont {Zhu}, \citenamefont {Lei}, \citenamefont {Cao}, \citenamefont
+  {Li}, \citenamefont {Li}, \citenamefont {Plachta}, \citenamefont {Matzuk},
+  \citenamefont {Ikawa}, \citenamefont {Duan}, \citenamefont {Zhang},\ and\
+  \citenamefont {Wang}}]{Qu2021cooperation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Qu}}, \bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont {Chen}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Guo}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {Ma}}, \bibinfo {author} {\bibfnamefont
+  {Y.}~\bibnamefont {Lu}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Shi}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Liu}}, \bibinfo
+  {author} {\bibfnamefont {T.}~\bibnamefont {Zhou}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Noda}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Qian}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Zhang}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Zhu}}, \bibinfo
+  {author} {\bibfnamefont {X.}~\bibnamefont {Lei}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Cao}}, \bibinfo {author} {\bibfnamefont
+  {W.}~\bibnamefont {Li}}, \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Li}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Plachta}},
+  \bibinfo {author} {\bibfnamefont {M.~M.}\ \bibnamefont {Matzuk}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Ikawa}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Duan}}, \bibinfo {author} {\bibfnamefont
+  {Y.}~\bibnamefont {Zhang}},\ and\ \bibinfo {author} {\bibfnamefont
+  {H.}~\bibnamefont {Wang}},\ }\href
+  {https://doi.org/10.1007/s13238-021-00825-y} {\bibfield  {journal} {\bibinfo
+  {journal} {Protein Cell}\ }\textbf {\bibinfo {volume} {12}},\ \bibinfo
+  {pages} {810} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Phuyal}\ \emph {et~al.}(2022)\citenamefont {Phuyal},
+  \citenamefont {Suarez},\ and\ \citenamefont {Tung}}]{Phuyal2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Phuyal}}, \bibinfo {author} {\bibfnamefont {S.~S.}\ \bibnamefont {Suarez}},\
+  and\ \bibinfo {author} {\bibfnamefont {C.-K.}\ \bibnamefont {Tung}},\
+  }\bibfield  {journal} {\bibinfo  {journal} {Frontiers in Cell and
+  Developmental Biology}\ }\textbf {\bibinfo {volume} {10}},\ \href
+  {https://doi.org/10.3389/fcell.2022.961623} {10.3389/fcell.2022.961623}
+  (\bibinfo {year} {2022})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yang}\ \emph {et~al.}(2008)\citenamefont {Yang},
+  \citenamefont {Elgeti},\ and\ \citenamefont {Gompper}}]{yang2008cooperation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Yang}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Elgeti}},\ and\
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Gompper}},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Physical review E}\ }\textbf
+  {\bibinfo {volume} {78}},\ \bibinfo {pages} {061903} (\bibinfo {year}
+  {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yang}\ \emph {et~al.}(2014)\citenamefont {Yang},
+  \citenamefont {Qiu},\ and\ \citenamefont {Gompper}}]{yang2014self}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Yang}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Qiu}},\ and\
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Gompper}},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review E}\ }\textbf
+  {\bibinfo {volume} {89}},\ \bibinfo {pages} {012720} (\bibinfo {year}
+  {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Haines}\ \emph {et~al.}(2009)\citenamefont {Haines},
+  \citenamefont {Sokolov}, \citenamefont {Aranson}, \citenamefont {Berlyand},\
+  and\ \citenamefont {Karpeev}}]{2009_Sokolov}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~M.}\ \bibnamefont
+  {Haines}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Sokolov}},
+  \bibinfo {author} {\bibfnamefont {I.~S.}\ \bibnamefont {Aranson}}, \bibinfo
+  {author} {\bibfnamefont {L.}~\bibnamefont {Berlyand}},\ and\ \bibinfo
+  {author} {\bibfnamefont {D.~A.}\ \bibnamefont {Karpeev}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {PRE}\ }\textbf {\bibinfo {volume}
+  {80}},\ \bibinfo {pages} {041922} (\bibinfo {year} {2009})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {López}\ \emph {et~al.}(2015)\citenamefont {López},
+  \citenamefont {Gachelin}, \citenamefont {Douarche}, \citenamefont {Auradou},\
+  and\ \citenamefont {Clément}}]{2015_Lopez}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~M.}\ \bibnamefont
+  {López}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Gachelin}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Douarche}}, \bibinfo
+  {author} {\bibfnamefont {H.}~\bibnamefont {Auradou}},\ and\ \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Clément}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {PRL}\ }\textbf {\bibinfo {volume} {115}},\
+  \bibinfo {pages} {028301} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Großmann}\ \emph {et~al.}(2014)\citenamefont
+  {Großmann}, \citenamefont {Romanczuk}, \citenamefont {Bär},\ and\
+  \citenamefont {Schimansky-Geier}}]{2014_GroBmann}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Großmann}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Romanczuk}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Bär}},\
+  and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Schimansky-Geier}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {PRL}\ }\textbf
+  {\bibinfo {volume} {113}},\ \bibinfo {pages} {258104} (\bibinfo {year}
+  {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Geyer}\ \emph {et~al.}(2019)\citenamefont {Geyer},
+  \citenamefont {Morin},\ and\ \citenamefont {Bartolo}}]{2018_Geyer}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Geyer}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Morin}},\ and\
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Bartolo}},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Nat. Mat.}\ }\textbf {\bibinfo
+  {volume} {17}},\ \bibinfo {pages} {789} (\bibinfo {year} {2019})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Toner}(2019)}]{toner2019giant}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Toner}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {The
+  Journal of chemical physics}\ }\textbf {\bibinfo {volume} {150}},\ \bibinfo
+  {pages} {154120} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zhang}\ \emph {et~al.}(2010)\citenamefont {Zhang},
+  \citenamefont {Be’er}, \citenamefont {Florin},\ and\ \citenamefont
+  {Swinney}}]{zhang2010collective}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.-P.}\ \bibnamefont
+  {Zhang}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Be’er}},
+  \bibinfo {author} {\bibfnamefont {E.-L.}\ \bibnamefont {Florin}},\ and\
+  \bibinfo {author} {\bibfnamefont {H.~L.}\ \bibnamefont {Swinney}},\
+  }\bibfield  {title} {\bibinfo {title} {Collective motion and density
+  fluctuations in bacterial colonies},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Proceedings of the National Academy of Sciences}\
+  }\textbf {\bibinfo {volume} {107}},\ \bibinfo {pages} {13626} (\bibinfo
+  {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schoeller}\ \emph {et~al.}(2020)\citenamefont
+  {Schoeller}, \citenamefont {Holt},\ and\ \citenamefont
+  {Keaveny}}]{schoeller2020collective}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~F.}\ \bibnamefont
+  {Schoeller}}, \bibinfo {author} {\bibfnamefont {W.~V.}\ \bibnamefont
+  {Holt}},\ and\ \bibinfo {author} {\bibfnamefont {E.~E.}\ \bibnamefont
+  {Keaveny}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Philosophical Transactions of the Royal Society B}\ }\textbf {\bibinfo
+  {volume} {375}},\ \bibinfo {pages} {20190384} (\bibinfo {year}
+  {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tung}\ \emph {et~al.}(2015)\citenamefont {Tung},
+  \citenamefont {Ardon}, \citenamefont {Roy}, \citenamefont {Koch},
+  \citenamefont {Suarez},\ and\ \citenamefont {Wu}}]{Tung2015emergence}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.-k.}\ \bibnamefont
+  {Tung}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Ardon}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Roy}}, \bibinfo {author}
+  {\bibfnamefont {D.~L.}\ \bibnamefont {Koch}}, \bibinfo {author}
+  {\bibfnamefont {S.~S.}\ \bibnamefont {Suarez}},\ and\ \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Wu}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.114.108102} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {114}},\
+  \bibinfo {pages} {108102} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rothschild}(1963)}]{Rothschild1963non}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Rothschild}},\ }\href
+  {https://doi.org/10.1038/1981221a0} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature}\ }\textbf {\bibinfo {volume} {198}},\ \bibinfo {pages}
+  {1221} (\bibinfo {year} {1963})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Drescher}\ \emph {et~al.}(2011)\citenamefont
+  {Drescher}, \citenamefont {Dunkel}, \citenamefont {Cisneros}, \citenamefont
+  {Ganguly},\ and\ \citenamefont {Goldstein}}]{Drescher2011fluid}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Drescher}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Dunkel}},
+  \bibinfo {author} {\bibfnamefont {L.~H.}\ \bibnamefont {Cisneros}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Ganguly}},\ and\ \bibinfo {author}
+  {\bibfnamefont {R.~E.}\ \bibnamefont {Goldstein}},\ }\href
+  {https://doi.org/10.1073/pnas.1019079108} {\bibfield  {journal} {\bibinfo
+  {journal} {Proceedings of the National Academy of Sciences}\ }\textbf
+  {\bibinfo {volume} {108}},\ \bibinfo {pages} {10940} (\bibinfo {year}
+  {2011})},\ \Eprint
+  {https://arxiv.org/abs/https://www.pnas.org/content/108/27/10940.full.pdf}
+  {https://www.pnas.org/content/108/27/10940.full.pdf} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nosrati}\ \emph {et~al.}(2015)\citenamefont
+  {Nosrati}, \citenamefont {Driouchi}, \citenamefont {Yip},\ and\ \citenamefont
+  {Sinton}}]{Nosrati2015two}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Nosrati}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Driouchi}},
+  \bibinfo {author} {\bibfnamefont {C.~M.}\ \bibnamefont {Yip}},\ and\ \bibinfo
+  {author} {\bibfnamefont {D.}~\bibnamefont {Sinton}},\ }\href
+  {https://doi.org/10.1038/ncomms9703} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature Commun}\ }\textbf {\bibinfo {volume} {6}},\ \bibinfo
+  {pages} {8703} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stringer}\ \emph {et~al.}(2021)\citenamefont
+  {Stringer}, \citenamefont {Wang}, \citenamefont {Michaelos},\ and\
+  \citenamefont {Pachitariu}}]{stringer2021cellpose}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Stringer}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Wang}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Michaelos}},\ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Pachitariu}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Nature methods}\
+  }\textbf {\bibinfo {volume} {18}},\ \bibinfo {pages} {100} (\bibinfo {year}
+  {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chat{\'e}}\ \emph {et~al.}(2008)\citenamefont
+  {Chat{\'e}}, \citenamefont {Ginelli}, \citenamefont {Gr{\'e}goire},\ and\
+  \citenamefont {Raynaud}}]{chate2008collective}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Chat{\'e}}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Ginelli}},
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Gr{\'e}goire}},\ and\
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Raynaud}},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review E}\ }\textbf
+  {\bibinfo {volume} {77}},\ \bibinfo {pages} {046113} (\bibinfo {year}
+  {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Szabo}\ \emph {et~al.}(2006)\citenamefont {Szabo},
+  \citenamefont {Sz{\"o}ll{\"o}si}, \citenamefont {G{\"o}nci}, \citenamefont
+  {Jur{\'a}nyi}, \citenamefont {Selmeczi},\ and\ \citenamefont
+  {Vicsek}}]{szabo2006phase}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Szabo}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Sz{\"o}ll{\"o}si}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {G{\"o}nci}}, \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Jur{\'a}nyi}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Selmeczi}},\ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Vicsek}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review E}\ }\textbf {\bibinfo {volume} {74}},\ \bibinfo {pages}
+  {061908} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nagai}\ \emph {et~al.}(2015)\citenamefont {Nagai},
+  \citenamefont {Sumino}, \citenamefont {Montagne}, \citenamefont {Aranson},\
+  and\ \citenamefont {Chat{\'e}}}]{nagai2015collective}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~H.}\ \bibnamefont
+  {Nagai}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Sumino}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Montagne}}, \bibinfo
+  {author} {\bibfnamefont {I.~S.}\ \bibnamefont {Aranson}},\ and\ \bibinfo
+  {author} {\bibfnamefont {H.}~\bibnamefont {Chat{\'e}}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical review letters}\
+  }\textbf {\bibinfo {volume} {114}},\ \bibinfo {pages} {168001} (\bibinfo
+  {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sugi}\ \emph {et~al.}(2019)\citenamefont {Sugi},
+  \citenamefont {Ito}, \citenamefont {Nishimura},\ and\ \citenamefont
+  {Nagai}}]{sugi2019c}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Sugi}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Ito}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Nishimura}},\ and\ \bibinfo
+  {author} {\bibfnamefont {K.~H.}\ \bibnamefont {Nagai}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nature communications}\ }\textbf
+  {\bibinfo {volume} {10}},\ \bibinfo {pages} {1} (\bibinfo {year}
+  {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tung}\ \emph {et~al.}(2017)\citenamefont {Tung},
+  \citenamefont {Lin}, \citenamefont {Harvey}, \citenamefont {Fiore},
+  \citenamefont {Ardon}, \citenamefont {Wu},\ and\ \citenamefont
+  {Suarez}}]{tung2017fluid}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.-k.}\ \bibnamefont
+  {Tung}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Lin}}, \bibinfo
+  {author} {\bibfnamefont {B.}~\bibnamefont {Harvey}}, \bibinfo {author}
+  {\bibfnamefont {A.~G.}\ \bibnamefont {Fiore}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Ardon}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Wu}},\ and\ \bibinfo {author} {\bibfnamefont {S.~S.}\
+  \bibnamefont {Suarez}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Scientific reports}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo
+  {pages} {1} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Toner}\ and\ \citenamefont {Tu}(1998)}]{1998_Toner}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Toner}}\ and\ \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Tu}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {PRE}\ }\textbf
+  {\bibinfo {volume} {58}},\ \bibinfo {pages} {4828} (\bibinfo {year}
+  {1998})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mahault}\ \emph {et~al.}(2019)\citenamefont
+  {Mahault}, \citenamefont {Ginelli},\ and\ \citenamefont
+  {Chat{\'e}}}]{2019_Chate}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Mahault}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Ginelli}},\
+  and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Chat{\'e}}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical review
+  letters}\ }\textbf {\bibinfo {volume} {123}},\ \bibinfo {pages} {218001}
+  (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Heidenreich}\ \emph {et~al.}(2016)\citenamefont
+  {Heidenreich}, \citenamefont {Dunkel}, \citenamefont {Klapp},\ and\
+  \citenamefont {B{\"a}r}}]{heidenreich2016hydrodynamic}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Heidenreich}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Dunkel}},
+  \bibinfo {author} {\bibfnamefont {S.~H.}\ \bibnamefont {Klapp}},\ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {B{\"a}r}},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review E}\ }\textbf
+  {\bibinfo {volume} {94}},\ \bibinfo {pages} {020601} (\bibinfo {year}
+  {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Creppy}\ \emph {et~al.}(2016)\citenamefont {Creppy},
+  \citenamefont {Plourabou{\'e}}, \citenamefont {Praud}, \citenamefont
+  {Druart}, \citenamefont {Cazin}, \citenamefont {Yu},\ and\ \citenamefont
+  {Degond}}]{creppy2016symmetry}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Creppy}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Plourabou{\'e}}}, \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Praud}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Druart}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Cazin}}, \bibinfo
+  {author} {\bibfnamefont {H.}~\bibnamefont {Yu}},\ and\ \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {Degond}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of The Royal Society Interface}\
+  }\textbf {\bibinfo {volume} {13}},\ \bibinfo {pages} {20160575} (\bibinfo
+  {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wioland}\ \emph {et~al.}(2013)\citenamefont
+  {Wioland}, \citenamefont {Woodhouse}, \citenamefont {Dunkel}, \citenamefont
+  {Kessler},\ and\ \citenamefont {Goldstein}}]{wioland2013confinement}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Wioland}}, \bibinfo {author} {\bibfnamefont {F.~G.}\ \bibnamefont
+  {Woodhouse}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Dunkel}},
+  \bibinfo {author} {\bibfnamefont {J.~O.}\ \bibnamefont {Kessler}},\ and\
+  \bibinfo {author} {\bibfnamefont {R.~E.}\ \bibnamefont {Goldstein}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical review
+  letters}\ }\textbf {\bibinfo {volume} {110}},\ \bibinfo {pages} {268102}
+  (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ishijima}\ \emph {et~al.}(1992)\citenamefont
+  {Ishijima}, \citenamefont {Hamaguchi}, \citenamefont {Naruse}, \citenamefont
+  {Ishijima},\ and\ \citenamefont {Hamaguchi}}]{Ishijima1992Rotational}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Ishijima}}, \bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont
+  {Hamaguchi}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Naruse}},
+  \bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont {Ishijima}},\ and\
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Hamaguchi}},\ }\bibfield
+  {title} {\bibinfo {title} {{Rotational Movement of a Spermatozoon Around Its
+  Long Axis}},\ }\href {https://doi.org/10.1242/jeb.163.1.15} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Experimental Biology}\ }\textbf
+  {\bibinfo {volume} {163}},\ \bibinfo {pages} {15} (\bibinfo {year} {1992})},\
+  \Eprint
+  {https://arxiv.org/abs/https://journals.biologists.com/jeb/article-pdf/163/1/15/2464544/jexbio\_163\_1\_15.pdf}
+  {https://journals.biologists.com/jeb/article-pdf/163/1/15/2464544/jexbio\_163\_1\_15.pdf}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Friedrich}\ \emph {et~al.}(2010)\citenamefont
+  {Friedrich}, \citenamefont {Riedel-Kruse}, \citenamefont {Howard},\ and\
+  \citenamefont {Jülicher}}]{Friedrich2010high}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~M.}\ \bibnamefont
+  {Friedrich}}, \bibinfo {author} {\bibfnamefont {I.~H.}\ \bibnamefont
+  {Riedel-Kruse}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Howard}},\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Jülicher}},\ }\bibfield  {title} {\bibinfo {title} {{High-precision
+  tracking of sperm swimming fine structure provides strong test of resistive
+  force theory}},\ }\href {https://doi.org/10.1242/jeb.039800} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Experimental Biology}\ }\textbf
+  {\bibinfo {volume} {213}},\ \bibinfo {pages} {1226} (\bibinfo {year}
+  {2010})},\ \Eprint
+  {https://arxiv.org/abs/https://journals.biologists.com/jeb/article-pdf/213/8/1226/1273159/1226.pdf}
+  {https://journals.biologists.com/jeb/article-pdf/213/8/1226/1273159/1226.pdf}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aditi~Simha}\ and\ \citenamefont
+  {Ramaswamy}(2002)}]{Simha2002hydrodynamic}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Aditi~Simha}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Ramaswamy}},\ }\href {https://doi.org/10.1103/PhysRevLett.89.058101}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {89}},\ \bibinfo {pages} {058101} (\bibinfo {year}
+  {2002})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ishimoto}\ and\ \citenamefont
+  {Gaffney}(2018)}]{Ishimoto2018hydrodynamic}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Ishimoto}}\ and\ \bibinfo {author} {\bibfnamefont {E.~A.}\ \bibnamefont
+  {Gaffney}},\ }\href {https://doi.org/10.1038/s41598-018-33584-8} {\bibfield
+  {journal} {\bibinfo  {journal} {Scientific Reports}\ }\textbf {\bibinfo
+  {volume} {8}},\ \bibinfo {pages} {15600} (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Phillips}(1972)}]{Phillips1972comparative}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~M.}\ \bibnamefont
+  {Phillips}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {The
+  Journal of cell biology}\ }\textbf {\bibinfo {volume} {53}},\ \bibinfo
+  {pages} {561} (\bibinfo {year} {1972})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sknepnek}\ and\ \citenamefont
+  {Henkes}(2015)}]{sknepnek2015active}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Sknepnek}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Henkes}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review E}\ }\textbf {\bibinfo {volume} {91}},\ \bibinfo {pages}
+  {022306} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ritsma}\ \emph {et~al.}(2014)\citenamefont {Ritsma},
+  \citenamefont {Ellenbroek}, \citenamefont {Zomer}, \citenamefont {Snippert},
+  \citenamefont {de~Sauvage}, \citenamefont {Simons}, \citenamefont {Clevers},\
+  and\ \citenamefont {van Rheenen}}]{ritsma2014intestinal}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Ritsma}}, \bibinfo {author} {\bibfnamefont {S.~I.}\ \bibnamefont
+  {Ellenbroek}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Zomer}},
+  \bibinfo {author} {\bibfnamefont {H.~J.}\ \bibnamefont {Snippert}}, \bibinfo
+  {author} {\bibfnamefont {F.~J.}\ \bibnamefont {de~Sauvage}}, \bibinfo
+  {author} {\bibfnamefont {B.~D.}\ \bibnamefont {Simons}}, \bibinfo {author}
+  {\bibfnamefont {H.}~\bibnamefont {Clevers}},\ and\ \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {van Rheenen}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo {volume} {507}},\
+  \bibinfo {pages} {362} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shankar}\ \emph {et~al.}(2017)\citenamefont
+  {Shankar}, \citenamefont {Bowick},\ and\ \citenamefont
+  {Marchetti}}]{shankar2017topological}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Shankar}}, \bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont
+  {Bowick}},\ and\ \bibinfo {author} {\bibfnamefont {M.~C.}\ \bibnamefont
+  {Marchetti}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review X}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo {pages}
+  {031039} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gaffney}\ \emph {et~al.}(2021)\citenamefont
+  {Gaffney}, \citenamefont {Ishimoto},\ and\ \citenamefont
+  {Walker}}]{Gaffney2021modelling}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~A.}\ \bibnamefont
+  {Gaffney}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Ishimoto}},\
+  and\ \bibinfo {author} {\bibfnamefont {B.~J.}\ \bibnamefont {Walker}},\
+  }\href {https://doi.org/10.3389/fcell.2021.710825} {\bibfield  {journal}
+  {\bibinfo  {journal} {Frontiers in Cell and Developmental Biology}\ }\textbf
+  {\bibinfo {volume} {9}},\ \bibinfo {pages} {1927} (\bibinfo {year}
+  {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {David}\ \emph {et~al.}(2015)\citenamefont {David},
+  \citenamefont {Kohnke}, \citenamefont {Lagriffoul}, \citenamefont {Praud},
+  \citenamefont {Plouarboué}, \citenamefont {Degond},\ and\ \citenamefont
+  {Druart}}]{DAVID2015mass}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {David}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Kohnke}},
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Lagriffoul}}, \bibinfo
+  {author} {\bibfnamefont {O.}~\bibnamefont {Praud}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Plouarboué}}, \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {Degond}},\ and\ \bibinfo {author}
+  {\bibfnamefont {X.}~\bibnamefont {Druart}},\ }\href
+  {https://doi.org/https://doi.org/10.1016/j.anireprosci.2015.08.006}
+  {\bibfield  {journal} {\bibinfo  {journal} {Animal Reproduction Science}\
+  }\textbf {\bibinfo {volume} {161}},\ \bibinfo {pages} {75} (\bibinfo {year}
+  {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {David}\ \emph {et~al.}(2018)\citenamefont {David},
+  \citenamefont {Kohnke}, \citenamefont {Fehrenbach}, \citenamefont {Simoes},
+  \citenamefont {Debreuve}, \citenamefont {Descombes}, \citenamefont
+  {Plourabou{\'e}}, \citenamefont {Degond},\ and\ \citenamefont
+  {Druart}}]{david2018new}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {David}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Kohnke}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Fehrenbach}}, \bibinfo
+  {author} {\bibfnamefont {A.~L.}\ \bibnamefont {Simoes}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Debreuve}}, \bibinfo {author}
+  {\bibfnamefont {X.}~\bibnamefont {Descombes}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Plourabou{\'e}}}, \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {Degond}},\ and\ \bibinfo {author}
+  {\bibfnamefont {X.}~\bibnamefont {Druart}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Reproduction, Fertility and Development}\
+  }\textbf {\bibinfo {volume} {30}},\ \bibinfo {pages} {889} (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Koziol}\ and\ \citenamefont
+  {Armstrong}(2018)}]{koziol2018manual}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Koziol}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Armstrong}},\ }\bibfield  {title} {\bibinfo {title} {Manual for breeding
+  soundness examination of bulls},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Soc Theriogenology}\ ,\ \bibinfo {pages} {1}} (\bibinfo
+  {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Breed}(2005)}]{breed2005evolution}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.~G.}\ \bibnamefont
+  {Breed}},\ }\bibfield  {title} {\bibinfo {title} {Evolution of the
+  spermatozoon in muroid rodents},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Morphology}\ }\textbf {\bibinfo {volume}
+  {265}},\ \bibinfo {pages} {271} (\bibinfo {year} {2005})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Pearce}\ \emph {et~al.}(2018)\citenamefont {Pearce},
+  \citenamefont {Hoogerbrugge}, \citenamefont {Hook}, \citenamefont {Fisher},\
+  and\ \citenamefont {Giomi}}]{pearce2018cellular}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~J.}\ \bibnamefont
+  {Pearce}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Hoogerbrugge}}, \bibinfo {author} {\bibfnamefont {K.~A.}\ \bibnamefont
+  {Hook}}, \bibinfo {author} {\bibfnamefont {H.~S.}\ \bibnamefont {Fisher}},\
+  and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Giomi}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of The
+  Royal Society Interface}\ }\textbf {\bibinfo {volume} {15}},\ \bibinfo
+  {pages} {20180702} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hook}\ and\ \citenamefont
+  {Fisher}(2020)}]{hook2020methodological}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~A.}\ \bibnamefont
+  {Hook}}\ and\ \bibinfo {author} {\bibfnamefont {H.~S.}\ \bibnamefont
+  {Fisher}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Molecular reproduction and development}\ }\textbf {\bibinfo {volume} {87}},\
+  \bibinfo {pages} {633} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Parrish}\ \emph {et~al.}(1988)\citenamefont
+  {Parrish}, \citenamefont {Susko-Parrish}, \citenamefont {Winer},\ and\
+  \citenamefont {First}}]{Parrish1988capacitation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~J.}\ \bibnamefont
+  {Parrish}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Susko-Parrish}}, \bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {Winer}},\ and\ \bibinfo {author} {\bibfnamefont {N.~L.}\ \bibnamefont
+  {First}},\ }\href {https://doi.org/10.1095/biolreprod38.5.1171} {\bibfield
+  {journal} {\bibinfo  {journal} {Biology of Reproduction}\ }\textbf {\bibinfo
+  {volume} {38}},\ \bibinfo {pages} {1171} (\bibinfo {year} {1988})},\ \Eprint
+  {https://arxiv.org/abs/https://academic.oup.com/biolreprod/article-pdf/38/5/1171/10545555/biolreprod1171.pdf}
+  {https://academic.oup.com/biolreprod/article-pdf/38/5/1171/10545555/biolreprod1171.pdf}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Walker}\ \emph {et~al.}(2020)\citenamefont {Walker},
+  \citenamefont {Phuyal}, \citenamefont {Ishimoto}, \citenamefont {Tung},\ and\
+  \citenamefont {Gaffney}}]{Walker2021computer}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~J.}\ \bibnamefont
+  {Walker}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Phuyal}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Ishimoto}}, \bibinfo
+  {author} {\bibfnamefont {C.-K.}\ \bibnamefont {Tung}},\ and\ \bibinfo
+  {author} {\bibfnamefont {E.~A.}\ \bibnamefont {Gaffney}},\ }\href
+  {https://doi.org/10.1098/rsos.200769} {\bibfield  {journal} {\bibinfo
+  {journal} {Royal Society Open Science}\ }\textbf {\bibinfo {volume} {7}},\
+  \bibinfo {pages} {200769} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\end{thebibliography}%
