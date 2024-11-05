@@ -34,3 +34,6 @@ I will eventually organize these, but for now...
 
 ## 2020
 
+[Interplay of curvature and rigidity in shape-based models of confluent tissue](/2020_PRR_sphericalVertexModel/reprint.pdf)
+
+[Small-scale demixing in confluent biological tissue](/2020_SoftMatter_smallScaleDemixingVM/reprint.pdf)

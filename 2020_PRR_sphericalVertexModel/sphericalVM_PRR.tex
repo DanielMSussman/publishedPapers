@@ -1,0 +1,248 @@
+\documentclass[aps,pre,reprint,superscriptaddress,nofootinbib]{revtex4-2}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\bibliographystyle{apsrev4-1}
+
+
+\begin{document}
+\frenchspacing
+
+\title{Interplay of curvature and rigidity in shape-based models of confluent tissue}
+
+\author{Daniel M. Sussman}\email{daniel.m.sussman@emory.edu}
+\affiliation{Department of Physics, Emory University, Atlanta, GA, USA}
+
+
+\date{\today}
+
+\begin{abstract}
+Rigidity transitions in simple models of confluent cells have been a powerful organizing principle in understanding the dynamics and mechanics of dense biological tissue. In this work we explore the interplay between geometry and rigidity in two-dimensional vertex models confined to the surface of a sphere. By considering shapes of cells defined by perimeters whose magnitude depends on geodesic distances and areas determined by spherical polygons, the critical shape index in such models is affected by the size of the cell relative to the radius of the sphere on which it is embedded. This implies that cells can collectively rigidify by growing the size of the sphere, i.e. by tuning the curvature of their domain. Finite-temperature studies indicate that cell motility is affected well away from the zero-temperature transition point.
+\end{abstract}
+
+\maketitle
+
+
+%%
+\section{Introduction}
+%%
+
+Recent years have seen a growing interest in the way that mechanical interactions between cells play a fundamental role in structural and dynamical processes in biology \cite{d1952growth,irvine2017mechanical}. This connection has been particularly apparent in the context of morphogenesis, where natural connections between mechanical stresses, cellular divisions, and the buckling and bending of epithelial sheets can be seen \cite{irvine2017mechanical,osterfield2013three, goodwin2019smooth,rupprecht2017geometric,streichan2018global,fouchard2020curling}. Simple coarse-grained models, ranging from lattice-based models to soft spheres to deformable polygons to phase field models \cite{Brodland2004, van2015simulating,teomy2018confluent,boromand2018jamming}, have been been useful in organizing these connections into predictive frameworks.
+
+Here we focus on vertex models, which represent confluent monolayers as polygonal or polyhedral tilings of space; each geometrical unit corresponds to a coarse-grained cell \cite{Honda1978} and the degrees of freedom are the vertices of the geometrical units. Vertex models attempt to explicitly represent mechanical interactions between neighboring cells by force laws that depend on the local geometry of the system, and have been used to model biophysical processes covering not only morphogenesis but also wound healing and tumor metastasis  \cite{Honda2001, Bi2014,Hufnagel2006, Farhadifar2007, Friedl2009, Brugues2014, Etournay2015,spahn2013vertex}.
+
+Such models have received attention not only for their appealing geometrical coarse-graining of clearly complex biological systems, but also for the unusual properties such models can support. For instance, two-dimensional vertex models have unusual zero-temperature rigidity transitions \cite{staple2010mechanics, Bi2015,sussman2018no,yan2019multicellular} with accompanying exotic mechanical states \cite{moshe2018geometric,noll2017active}, their glassy dynamics at finite temperature can be deeply anomalous \cite{Sussman2018epl}, and they can support unusual interfaces between coexisting populations of cells \cite{sussman2018soft}. Although systematically mapping from confluent cellular systems to these geometrical models is challenging, the models' unusual mechanical and dynamical properties suggest ways in which cells could exploit simple physical mechanisms to achieve unusual configurations or motions that may be useful for development.
+
+\begin{figure}[b]
+\centerline{
+\includegraphics[width=0.45\textwidth]{schematic.png}
+}
+\caption{\label{fig:schematic}
+{\bf{Schematic image of 2D vertex models}} 
+Simulation snapshots of a 2D vertex models in flat space with periodic boundary conditions (left) and embedded on the surface of a sphere (right).}
+\end{figure}
+
+While experiments on flat cellular monolayers are quite common, epithelial proliferation often takes place in domains where the \emph{curvature} of the layer is both present and may be strongly varying (as in the ellipsoidal shapes of developing embryonic systems or in the regions of both positive and negative curvature in branching morphogenesis). While gradients in curvature surely play an important role, we begin in this work by studying vertex models in domains of constant positive curvature. We are particularly interested in the interplay between the curvature of the cellular monolayer and the mechanical or dynamical state of the system. We will see that the curvature of the domain has natural consequences for the zero-temperature rigidity transition in such models, and that the finite temperature ``glassy'' behavior of cells an be strongly affected by this underlying $T=0$ transition.
+
+There are many natural extensions of the vertex model that could be considered in moving from flat space to a three-dimensional embedding \cite{alt2017vertex,okuda2015three,Fletcher2014,osterfield2013three,murisic2015discrete}. For simplicity we consider the so-called ``3D apical vertex models'' \cite{alt2017vertex}, which represent each cell only by an apical polygon whose vertices are constrained to a surface embedded the 3D. To demonstrate the tight connection between curvature and rigidity, we focus on two-dimensional cells constrained to the surface of a sphere, as schematically illustrated in Fig. \ref{fig:schematic}, although we note that the methods described in this paper are easily extended to other holonomic constraint surfaces \cite{SAMOS}.
+
+
+%%
+\section{Methods}
+%%
+\subsection{An apical vertex model on the surface of a sphere}
+We begin by writing  the energy functional for a flat confluent monolayer of cells,
+\begin{equation}
+\label{eq:energy1}
+E = \sum_{i=1}^{N}{\left[k_A\left(A_i - A_0\right)^2 +k_P \left(P_i-P_0\right)^2\right]}
+\end{equation}
+This energy depends on the area $A_i$ and perimeter $P_i$ of each of the $N$ cells, indexed by $i$. The model parameters are the ``preferred'' geometric values, $A_0$ and $P_0$, along with the area and perimeter stiffnesses $k_A$ and $k_P$ (here we assume the monodisperse case in which all cells have identical preferences). Biologically, $A_0$ is commonly assumed to represent a combination of cellular incompressibility and the resistance of the monolayer to height fluctuations, and $P_0$ to represent a competition between tensions and adhesions acting between cells; more broadly this can be viewed as a minimal Taylor series expansion in geometrical properties that describes cellular matter rather than foams \cite{kim2018universal}. At $T=0$ a rigidity transition occurs at a particular value of $P_0$, which we denote by $P_0^*$, above which the system sits in a global energy minimum and has a vanishing shear modulus.
+
+The density dependence of this model can be made transparent \cite{teomy2018confluent,merkel2018geometrically} by choosing the unit of length to be $\sqrt{\langle A \rangle}$ and by exploiting the fact that in these models the cells completely fill space, $\sum_i A_i = A_{total} = N\langle A \rangle$. Letting $a$ and $p$ to refer to dimensionless areas and perimeters, and letting $k_r = k_A \langle A \rangle / k_P$, Eq. \ref{eq:energy1} can be rewritten as
+\begin{equation}
+\label{eq:energy2}
+\frac{E}{k_P\langle A \rangle } = \sum_{i=1}^{N}{\left[k_r\left(a_i - 1\right)^2 +\left(p_i-p_0\right)^2\right]} + N k_r \left(a_0-1\right)^2.\nonumber
+\end{equation}
+Thus, if $P_0$ is a control parameter (\emph{and} if the stiffnesses $k_r$ and $P_0$ are themselves density-independent, an interesting biological question), the density dependence of the model in flat space enters via $p_0 = P_0/\sqrt{\langle A \rangle} = P_0 \rho^{1/2}$. Writing this dimensionless form for the energy makes it clear that the parameter $a_0$ couples to the total size of the system -- serving as an offset to the total pressure -- but it does not affect the forces between degrees of freedom \cite{teomy2018confluent,merkel2018geometrically} and hence does not control the rigidity transition. To be explicit, via this mechanism if cells divide in a domain of fixed area their average size decreases and cells which were initially in an \emph{incompatible} regime of parameter space ($p_0 < p_0^*$, in which geometrical frustration prevents the cells from achieving the global energy ground state) could enter into a \emph{compatible} regime of parameter space. Thus, in flat space cells in this model can unjam via growth.
+
+Extending the above expressions to a \emph{spherical vertex model} requires no change of notation (although justifying the geometric coarse-graining would require a more biologically informed derivation, as we discuss in the conclusion). We simply interpret the ``areas'' and ``perimeters'' to be those measured on the sphere: perimeters are given by sums of geodesic distances as one traverses the vertices composing the cell, and areas are given by the area of the spherical polygons enclosed by those geodesic arcs. The forces acting on the vertices are given by the negative spherical gradients of Eq. \ref{eq:energy1} (explicit expressions are given below). The statistical mechanics of fluids confined to curved manifolds is itself a rich topic \cite{tarjus2012statistical,guerra2018freezing}, and a natural non-biological application of the methods developed here are to general phenomena of disordered rigidity transitions in non-Euclidean spaces.
+
+To implement efficient and highly scalable numerical simulations of the above equations, allowing T1 transitions to facilitate neighbor exchanges between cells and evolving the degrees of freedom under equations of motion ranging from energy minimization schemes to overdamped Brownian dynamics to self-propelled ``active'' dynamics, we combine the GPU-accelerated frameworks described in Refs. \cite{sussman2017cellGPU,sussman2019fast}. We now provide some additional computational details for the interested reader.
+
+%
+%
+\subsection{Projection operator formalism for the constraint surface}
+We follow Refs. \cite{SAMOS,sknepnek2015active} in using the projection operator formalism to enforce the hard constraint that the degrees of freedom lie on the surface of a sphere. Explicitly, for the case of overdamped Brownian dynamics at temperature $T$ we write
+\begin{equation}
+\Delta \vb{r}_i = P_T\left( \vb{r}_i, -\mu \Delta t \nabla_i E + \eta_i \right),
+\end{equation}
+where $\mu$ is an inverse friction coefficient, $\eta$ a normally distributed random force with zero mean and with $\langle \eta_{i\alpha}(t) \eta_{j\beta}(t') \rangle = 2\mu T\Delta t \delta_{ij}\delta_{\alpha\beta}$ in each of the three Cartesian directions denoted by greek indices (so that the noise has the correct statistics in the tangent plane of the vertex). The operator $P_T(\vb{a}, \vb{b}) = \vb{b} - \left(\hat{\vb{a}}\cdot\vb{b}\hat{\vb{a}}\right)$ projects the forces and the random noise onto the tangent plane at the location of the degree of freedom. To maintain the spherical constraint small time steps must be used, and degrees of freedom are projected back onto the surface of the sphere of radius $R$ after they are moved via $\vb{r}_i(t+\Delta t) = P_N(\vb{r}_i(t) + \Delta \vb{r}_i)$ for $P_N(\vb{a}) = R \frac{\vb{a}}{|\vb{a}|}$.
+
+%
+%
+\subsection{Explicit force calculations}
+For completeness, and to better illustrate the computational challenges that must be addressed when simulating 2D vertex models constrained to curved surfaces, we explicitly document some of the expressions used to compute forces in the vertex model where the degrees of freedom are constrained to lie on the surface of a sphere of radius $R$. As in previous works \cite{Bi2015,sussman2017cellGPU,bi2016motility}, the calculation of the gradient of  Eq. \ref{eq:energy1} is readily expanded via chain rules to to separate out contribution from the particular functional form of the energy and from the entirely geometric quantities, i.e., how much distances and areas of polygons change when degrees of freedom are moved. Thus, the new quantities to implement in the present case of a spherical vertex model are a complete set of primitives for calculating geodesic distances, spherical polygon areas, and the appropriate derivatives of each with respect to vertex positions.
+
+We note that on the surface of the sphere there are many equivalent expressions for the geodesic distance between two points (or the included angle between three points, or the area of a spherical polygon given by $n$ points, etc). While \emph{analytically} equivalent, these expressions typically have different regimes of \emph{numerical} stability. For instance, given two points on the sphere, $\vec{n}_1$ and $\vec{n}_2$, the distance $d$ may be written as
+\begin{equation}
+d(\vec{n}_1,\vec{n}_2) = \left\{
+	\begin{aligned}
+	d_a&=R \cos^{-1}\left(\hat{n}_1\cdot\hat{n}_2\right)\\
+	d_b&=R \sin^{-1}\left(\left|\hat{n}_1\times \hat{n}_2\right|\right)\\
+	d_c&=R \tan^{-1}\left(\frac{\left|\hat{n}_1\times \hat{n}_2\right|}{\hat{n}_1\cdot\hat{n}_2}\right)\\
+	\end{aligned}
+\right. .
+\end{equation}
+The first expression above is the simplest and least computationally expensive, but it is poorly conditioned for very small distances (as might be relevant when vertices get very close to each other before performing a T1 transition). The second expression is poorly conditioned for large distances, whereas the third is the most computationally expensive but is well-conditioned for all distances. These questions of numerical stability become especially acute when dealing with the forces, and we have found it important to implement self-consistency checks on the force calculations and switch to analytically equivalent but numerically different routes of calculating gradients in the spherical vertex model.
+
+%
+%
+\subsubsection{Gradient calculations}
+Given a vertex position $\vec{n}_1$, which our program stores in $\mathbb{R}^3$, we first express it in the usual spherical basis $\vec{n}_1 = \{r_1,\theta_1,\phi_1\}$ and compute the local $\hat{\theta}$ and $\hat{\phi}$ directions. The spherical gradient of the distance between two vertices as the position of the first vertex is changed is then given by
+\begin{equation}
+\nabla_1 d(\vec{n}_1,\vec{n}_2) = \frac{1}{R} \frac{\partial d}{\partial \theta_1}\hat{\mathbf{\theta}}_1 +\frac{1}{R\sin\theta_1} \frac{\partial d}{\partial \phi_1}\hat{\mathbf{\phi}}_1,
+\end{equation}
+where choosing a particular formula to compute the geodesic distance we have
+\begin{align}
+d_a(\vec{n}_1,\vec{n}_2) = R \cos^{-1}&\big( \cos(\theta_1)\cos(\theta_2)  \\&+ \sin(\theta_1) \sin(\theta_2)\cos(\phi_1-\phi_2)\big). 
+\end{align}
+Thus,
+\begin{widetext}
+\begin{eqnarray}
+\frac{1}{R} \frac{\partial d_a}{\partial \theta_1} &=& \frac{\cos(\theta_2)\sin(\theta_1) - \cos(\theta_1) \cos(\phi_1-\phi_2) \sin(\theta_2)}{\sqrt{1-\left(\cos(\theta_1)\cos(\theta_2) + \cos(\phi_1-\phi_2) \sin(\theta_1)\sin(\theta_2) \right)^2}}, \\
+\frac{1}{R\sin\theta_1} \frac{\partial d_a}{\partial \phi_1}&=& \frac{\sin(\theta_2) \sin(\phi_1-\phi_2)}{\sqrt{1-\left(\cos(\theta_1)\cos(\theta_2) + \cos(\phi_1-\phi_2) \sin(\theta_1)\sin(\theta_2) \right)^2}}.
+\end{eqnarray}
+\end{widetext}
+From this one readily appreciates the substantial cost of computing gradients of $d_b$ or $d_c$, and so whenever possible we opt for the simpler expressions stemming from $d_a$.
+
+Similarly, that the area of a spherical triangle $A(\vec{n}_1,\vec{n}_2,\vec{n}_3)$ can be written as
+\begin{eqnarray}
+ A&=&R^2\left(\alpha+\beta+\gamma -\pi \right), \textrm{ where}\\
+\alpha &=& \cos^{-1} \left( \frac{\cos(a) - \cos(b)\cos(c)}{\sin(b)\sin(c)}\right), \\ 
+\beta &=&\cos^{-1} \left( \frac{\cos(b) - \cos(a)\cos(c)}{\sin(a)\sin(c)}\right),\\
+\gamma &=&\cos^{-1} \left( \frac{\cos(c) - \cos(a)\cos(b)}{\sin(a)\sin(b)}\right),\\
+\end{eqnarray}
+where 
+\begin{eqnarray}
+a &=& d(\vec{n}_2,\vec{n}_3)/R,\\
+b &=& d(\vec{n}_1,\vec{n}_3)/R, \\
+c &=& d(\vec{n}_1,\vec{n}_2)/R.
+\end{eqnarray}
+Clearly, again, care must be taken in choosing distance functions that will lead to well-conditioned expressions for both the area and gradients of the area while also minimizing the complexity of the resulting expressions. Additional considerations include the efficiency and numerical stability of computing cellular areas as either the sum of spherical triangles formed by the cell centroid and consecutive vertices around the cell or via the sum of the included angle at each of the $n$ vertices,
+\begin{equation}
+A(\{\vec{n}_1, \vec{n}_1,,\ldots,\vec{n}_n,\}) = R^2\left( \left(\sum_i^n \alpha_i\right) -(n-2)\pi\right);
+\end{equation}
+this is particularly delicate when the cells are not convex, or when edges cross.
+
+
+\subsection{Initial conditions}
+The initial conditions for both the zero-temperature quenches and the finite-temperature simulations reported in this work are chosen to be high-temperature random configurations of cells. We create these configurations by first picking a desired number of cells, $N_c$, and distributing $N_c$ points uniformly on the surface of the sphere. We use the Computational Geometry Algorithms Library (CGAL) \cite{cgal:eb-19b,cgal:hs-ch3-19b} to construct the convex hull of these points, and take the initial vertex positions to be the centroids of the resulting facets (projected back onto the sphere) \cite{fortune1995voronoi}. 
+
+
+%%
+%%
+\section{Results}
+%%
+
+\subsection{Athermal rigidity transition}
+We first directly probe the athermal rigidity transition of the spherical vertex model as a function of $N$ and $p_0$; for simplicity here we first focus on the $k_r=0$ limit of Eq. \ref{eq:energy2}. We prepare between 100 and 500 initial configurations for each value of $p_0$, seeded by randomly placing cell centers on the surface of the sphere and deriving the initial positions of the vertices from the convex hull of that point pattern. We perform a FIRE  energy minimization \cite{bitzek2006structural} of these configurations  to find the inherent state associated with each initial configuration. Like its counterpart in flat space, the spherical vertex model described here is extensively underconstrained; as such, we anticipate that the ground states of the model are mechanically stable only in the presence of residual stresses \cite{moshe2018geometric,sussman2018no,merkel2018geometrically}. 
+
+Thus, we estimate the rigidity transition for a given value of $N$ by computing the fraction of minimized states, $F(p_0,N)$, which minimize to an inherent state of zero energy. The probability distribution of transition points is given by the derivative of this function; to take this derivative while suppressing noise, we convolve a linear interpolation of the $F(p_0,N)$ with the derivative of a Gaussian whose standard deviation is related to the shape of $F(p_0,N)$ (see Ref. \cite{merkel2018geometrically}). We have done this for both for the planar and spherical vertex models at $k_r=0$, and the results are shown in Fig. \ref{fig:transitionDistribution}. 
+
+
+\begin{figure*}[bht!]
+\centerline{
+\includegraphics[width=0.5\textwidth]{flatTransitionKA0.pdf}\includegraphics[width=0.5\textwidth]{transitionKA0.pdf}
+}
+\caption{\label{fig:transitionDistribution}
+{\bf{Finite size effects in vertex model transitions for flat monolayer (left) and spherical (right) monolayers}} 
+Probability distribution of the critical value of perimeter, $p_0^*$, above which the $k_r=0$ vertex model transitions from a rigid to a mechanically unstable system. The main plots show the derivative of the fraction of states at zero energy, $F(p_0)$ (shown in the insets). Colors correspond to system sizes $N=32,\ 48,\ 64,\ 96,\ 128,\ 192,\ 256,\ 512,\ 1024$ (darker red to lighter blue). The correspondingly colored pentagons show the perimeter of a unit-area regular pentagon on a sphere of radius  $\sqrt{N/(4\pi)}$.}
+\end{figure*}
+
+
+Our results for the mean value of the transition for the planar vertex model, and the variance of the distribution, are consistent with previous studies \cite{merkel2019minimal} (although note that other simulations, based on the Surface Evolver package \cite{brakke1992surface} and minimizing under a different protocol, have reported slightly different results \cite{Bi2015}). As might be expected, the primary effect of approaching the thermodynamic limit in the planar case is to develop a more sharply peaked distribution about the $N\rightarrow\infty$ limiting value, with very little change in the mean value of the distribution. In contrast, the effects of changing the size of the sphere relative to the typical size of each cell is readily seen in the way the distribution of the transition point not only sharpens but also shifts with $N$.
+
+The critical value of $p_0$ separating the mechanically rigid and floppy phases as a function of $N$ closely tracks (but is not precisely equal to) the way in the which the perimeter of a unit-area regular pentagon varies on a sphere of total surface area $N$. This value of $p_0$ forms a natural bound for the \emph{non-linear} rigidity transition: sufficiently large cellular displacements require cells to exchange neighbors, on average cells have six sides, so during the T1 transition a spherical pentagon must be formed. If $p_0(N) < p_{penta}(N)$ this configuration will cost energy, but the precise connection between this bound on the nonlinear behavior of rearrangements and the infinitesimal rigidity calculation shown in Fig. \ref{fig:transitionDistribution} remains unclear, both here and in the planar case \cite{moshe2018geometric}.
+
+\subsection{Finite temperature dynamics}
+To show that this qualitative shift is neither just a result of the $k_r=0$ limit explored above nor an artifact of the exotic mechanical states at zero temperature found in vertex models (i.e., a result just of studying an extensively underconstrained model) \cite{noll2017active, sussman2018no,merkel2019minimal,moshe2018geometric}, we study the finite-temperature dynamics of disordered configurations of the spherical vertex model, with a range of $k_r$, $p_0$, $N$, and $T$. We have performed overdamped Brownian dynamics, and to illustrate the importance of curvature here we present representative data in which we consider fixing $p_0 = 3.775$ (less than the planar critical value, but above the spherical critical value for small $N$) while varying both $N$ and $T$ (while holding the typical cell size fixed, so that varying $N$ corresponds to varying the curvature of cellular substrate). 
+
+The characteristic relaxation time of the simulated systems, $\tau_\alpha(T,p_0)$,  were calculated as in Ref. \cite{Sussman2018epl} using the decay of the self-overlap function \cite{keys2007measurement}. This function measures the fraction of particles that have been displaced by more than a characteristic distance $b$ after a time $t$,
+\begin{equation}
+Q_s(t) = \frac{1}{N}\sum_{i=1}^N w \left( |\vec{r}_i(t) - \vec{r}_i(0) | \right),
+\end{equation}
+where $\vec{r}_i$ is the vector position of cell $i$, $w$ is a window function, $w(r \leq b) = 1$ and $w(r>b) = 0$. The cutoff $b$ plays a very similar role to a choice of  $\vec{q}$ when looking at the decay of the self-intermediate scattering function,
+\begin{equation}
+F_s(q,t)=N^{-1} \left\langle \sum_i e^{ i \vec{q}\cdot \left(\vec{r}_i(t) - \vec{r}_i(0)\right) } \right\rangle.
+\end{equation}
+We choose $b = 1/2$, and estimate $\tau_\alpha(T,p_0)$ as the time it takes for $Q_s(t)$ to decay to $1/e$.
+
+
+Figure \ref{fig:msd} shows representative changes in how the $\alpha$ relaxation time grows both with decreasing temperature and with increasing $N$. One clearly sees how the underlying change in $p_0^*(N)$ at $T=0$ affects the finite-temperature dynamics, with these examples showing an order-of-magnitude change in the dynamical scale (measured either as a time scale or a magnitude of typical displacements) as the system size changes from $N=32$ to $N=1024$. Notably both the MSD and relaxation-time data indicate a qualitative change in the temperature dependence of the dynamics as the system size is increased: the MSD data in the inset shows an example of cellular motions crossing over from simple diffusive behavior for small $N$ to caged, glassy behavior as $N$ is increased, and this is reflected in the curvature visible in the plot of  $\log \tau_\alpha(T)$ for large $N$ but not for small $N$. We note that the \emph{magnitude} of these dynamical effects will depend on $\left(p_0-p_0^*(N\rightarrow\infty)\right)$; a systematic study of these effects is currently underway.
+
+
+\begin{figure}[b]
+\centerline{
+\includegraphics[width=0.45\textwidth]{newFig3.pdf}
+}
+\caption{\label{fig:msd}
+{\bf{System size takes one from a fluid to a glassy regime}} The $\alpha$-relaxation time as as function of temperature for $N=32,\ 128,\ 1024$ (dark red to light blue), $p_0=3.775$, and $k_r=0$ goes from fluid-like to glassy as $N$ increases. Data averaged over 2-10 independent simulations for larger and smaller $N$. (Inset)  The mean-squared displacement, in units of $\langle A \rangle$, in the spherical vertex model with $p_0=3.75$, $k_r=1$, and $N=32,\ 128,\ 1024$ (dark red to light blue) averaged over $(8192/N)$ independent simulations at $T=5\times 10^{-4}$. Again, the MSD shows a transition from purely diffusive for small $N$ to transiently caged for large $N$.}
+\end{figure}
+
+
+%%
+\section{Discussion}
+%%
+
+The fact that the mean of the rigidity transition shifts as the relationship between curvature and cell-size varies suggests a novel mechanism by which cells could collectively tune between different mechanical phases as a function of their curvature. Models of 3D collections of cells in embryonic zebra fish development have shown the potential for coexistence between fluid-like behavior in regions of high curvature and solid-like behavior in regions of lower curvature \cite{mongera2018fluid}. Perhaps more relevant to this explicitly two-dimensional model, developing insect embryos look much like ellipsoidal versions of the right panel in Fig. \ref{fig:schematic}, with regions of high and low curvature. Thus, although we currently neglect gradients in curvature, the curvature-dependent rigidity discussed here might be directly relevant in the modeling of such systems \cite{jain2019regionalized}.
+
+This connection between curvature and the ability to support mechanical stresses suggests a relationship between density and jamming that is \emph{qualitatively different} from the planar case. There is now a competition between the scaling of the critical perimeter with typical cell size and the effect of curvature as expressed by ratio of the sphere radius to the typical cell size, leading to $P_0^*(N) = \langle A\rangle^{1/2} p_0^*(N)$, where $p_0^*(N)$ itself is estimated from the mean of the distributions in Fig. \ref{fig:transitionDistribution}.
+
+Crucially, the effect of curvature is strong enough to \emph{reverse} the qualitative dependence on density. This is schematically depicted in Fig. \ref{fig:criticalPerimeter}. which shows an estimate of the shifting of the rigidity transition $P_0^*(N,\langle A\rangle)$. In one limiting case, the number of cells could increase on a sphere of fixed radius. In this scenario, the decrease of $\langle A \rangle$ lowers the critical transition point, so cells dividing (at constant other model parameters) could induce the system to collectively \emph{unjam via growth}. In the other limiting case, the number of cells could increase in a simultaneously enlarging spherical domain (so that the cell number increases at fixed $\langle A \rangle$). In such a case the system could potentially \emph{rigidify via growth}. 
+
+\begin{figure}
+\centerline{
+\includegraphics[width=0.5\textwidth]{criticalPerimeter}
+}
+\caption{\label{fig:criticalPerimeter}
+{\bf{Jamming and unjamming via cellular division and death}} 
+Curves show the estimated dependence of $P_0^*$ as a function of $\langle A \rangle$ in the spherical vertex model for $N=32,\ 64,\ 128,\ 256$ (dark red to light blue) and for $N=1024$ (dashed black line) all at $\langle A \rangle = 1$. The value $p_0^*(N)$ is estimated from the mean of the distributions in Fig. \ref{fig:transitionDistribution}, on top of which the energy functional dependence of $\sqrt{\langle A \rangle}$ is applied. Schematically, cells dividing in a finite fixed domain would correspond to decreasing the typical cell size, moving the system along curves of constant color, whereas cells dividing in a growing domain would move the system across curves of different colors. This shows the possibility of cells collectively \emph{unjamming} or \emph{jamming} via growth at fixed other model parameters.}
+\end{figure}
+
+
+Recent work has suggested that real monolayers of epithelial cells in curved space may adopt configurations in which the apical and basal surfaces of a cell have very different geometries \cite{rupprecht2017geometric,gomez2018scutoids,nelson2018epithelial}. Whether the apical vertex models considered in this and related works are still sufficiently expressive coarse grained models to capture the underlying physics requires further work; it may be that in curved space models written only in terms of a single cross-sectional plane are sufficient only when the individual cells are small enough to not appreciable feel the effects of curvature. A test of these models could be provided by ongoing experiments conducted on cellular monolayers on substrates with non-trivial curvature (e.g., Refs. \cite{harmand20203d,turiv2020topology}), as the present formulation could be readily extended from spherical constraints to more general ones (tori, Gaussian bumps, and simple sinusoidal profiles being particularly straightforward to implement numerically).
+
+Before considering such complications, interesting extensions of the spherical vertex model presented here are anticipated by some existing studies of apical vertex models on curved surfaces \cite{Fletcher2014,osterfield2013three,murisic2015discrete}, in which the curved space is not a fixed embedding but can itself evolve and deform as the cells collectively exert stresses on their environment. It will be very interesting to combine models in which the surface can fluctuate rather than serving as a holonomic constraint with dynamical models that allow for cellular rearrangements. 
+
+
+Additionally, it will be very interesting to investigate the finite temperature glassy dynamics of this model in greater detail. Previous work on planar vertex and Voronoi models identified a deeply anomalous type of ``sub-Arrhenius'' dynamics, in which the relaxation time of the cells grew more slowly than exponential with decreasing temperature \cite{Sussman2018epl}. One speculation relates these unusual glassy dynamics to the unusual, residual-stress-driven rigidity transition those models possess at zero temperature. Embedding the vertex model on a sphere, as we have done here, provides one way to formally probe this hypothesis. We have constrained the vertices to lie exactly on the sphere, but have included no other energetic terms related to the curvature. Previous works on the apical vertex model have taken Eq. \ref{eq:energy1} and supplemented it with a discrete bending energy term \cite{seung1988defects} of the form
+\begin{equation}\label{eq:bending}
+E_b = B\sum_{ij}\left(1-\hat{n}_i\cdot \hat{n}_j\right),
+\end{equation}
+where $i$ and $j$ run over all neighboring faces and $\hat{n}_i$ is the surface normal corresponding to cell $i$.
+
+Adding such a term is clearly relevant for the case where the surface can fluctuate, but it is \emph{also} interesting even for the perfectly spherical case. On a unit sphere note that the geodesic distance between two points is $|r_{ij}| = \cos^{-1}\left(\hat{n}_i\cdot \hat{n}_j\right)$; in the limit where the inter-cellular spacing is small compared to the radius of the sphere the above term can be approximated by $E_b \approx \frac{B}{2}\sum_{ij}r_{ij}^2,$ adding an additional quadratic constraint for ever pair of cellular neighbors. Whereas Eq. \ref{eq:energy1} represents an extensively underconstrained system that can only rigidify through residual stresses, Eq. \ref{eq:bending} introduces enough additional constraints to rigidify the system more conventionally. Thus, studying the glassy dynamics of the spherical vertex model as a function of tuning $B$ from zero to unity could test the root cause of the anomalous glassy behavior seen in other simple models of cellular matter. This would also further support our finding that the mechanism discussed here in the context of a particular underconstrained vertex model is present more generally in the class of space-filling or shape-based models of cellular matter.
+
+In summary, in this work we have studied both the zero-temperature rigidity and the finite-temperature glassy dynamics of apical vertex models constrained to the surface of spheres, for which the energy functional is now expressed in terms of geodesic distances and the areas of spherical polygons. This constraint introduces a new ratio of length scales to the usual vertex model: the size of the sphere relative to the typical cell size. The critical shape index previously found to control the zero-temperature rigidity transition is affected by this ratio of length scales, and we find two modes by which cells could either \emph{rigidify} or \emph{unjam} as they divide, depending on whether the cellular division is accompanied by a growth of the spherical domain that keeps the cell cross-sectional area fixed or not. Finite-temperature studies show that the glassy dynamics of the spherical vertex model is sensitive to the underlying changes in the zero-temperature rigidity transition. Although the vertex model considered here is a somewhat specialized model of cellular monolayers, we emphasize that we expect the results obtained here -- which fundamentally stem from introducing curvature to the space in which the monolayer is constrained to move -- to be generic.
+
+\begin{acknowledgments}
+I would like to thank Matthias Merkel and Michael Moshe for illuminating discussions and for critical readings of this manuscript.
+\end{acknowledgments}
+
+\bibliography{sphericalVM}
+
+\end{document}
+
+
+\begin{figure}
+\centerline{
+\includegraphics[width=0.45\textwidth]{filename}
+}
+\caption{\label{fig:label}
+{\bf{Caption title}} 
+caption body}
+\end{figure}
