@@ -38,7 +38,7 @@ I will eventually organize these, but for now...
 
 [Small-scale demixing in confluent biological tissue](/2020_SoftMatter_smallScaleDemixingVM/reprint.pdf)
 
-## 2020
+## 2019
 
 [Fast, scalable, and interactive software for Landau-de Gennes numerical modeling of nematic topological defects](/2019_frontiersInPhysics_openQmin/reprint.pdf)
 
