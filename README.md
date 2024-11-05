@@ -37,3 +37,9 @@ I will eventually organize these, but for now...
 [Interplay of curvature and rigidity in shape-based models of confluent tissue](/2020_PRR_sphericalVertexModel/reprint.pdf)
 
 [Small-scale demixing in confluent biological tissue](/2020_SoftMatter_smallScaleDemixingVM/reprint.pdf)
+
+## 2020
+
+[Fast, scalable, and interactive software for Landau-de Gennes numerical modeling of nematic topological defects](/2019_frontiersInPhysics_openQmin/reprint.pdf)
+
+[Glassy dynamics in models of confluent tissue with mitosis and apoptosis](/2019_softMatter_glassyDividingCells/reprint.pdf)
