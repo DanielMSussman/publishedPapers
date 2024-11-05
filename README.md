@@ -1,4 +1,4 @@
-Below you will find direct links to pdfs of papers, listed by title and organized by year. My [google scholar](https://scholar.google.com/citations?user=yNzwdBcAAAAJ&hl=en&oi=ao) page can be used to find the published versions of all of these.
+Below you will find direct links to pdfs of papers, listed by title and organized by year. My [google scholar](https://scholar.google.com/citations?user=yNzwdBcAAAAJ&hl=en&oi=ao) page can be used to find the published versions of all of these, and of course all of my earlier work!
 
 ## 2024 
 
