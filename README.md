@@ -1,5 +1,14 @@
 Below you will find direct links to pdfs of papers, listed by title and organized by year. My [google scholar](https://scholar.google.com/citations?user=yNzwdBcAAAAJ&hl=en&oi=ao) page can be used to find the published versions of all of these, and of course all of my earlier work!
 
+## 2025
+
+[Banded phases in topological flocks](/2025_softMatter_voronoiBandingFlocks/reprint.pdf)
+
+[curvedSpaceSim: A framework for simulating particles interacting along geodesics](/2025_CompPhysComm_curvedSpaceSim/reprint.pdf)
+
+[Connecting anomalous elasticity and sub-Arrhenius structural dynamics in a cell-based model](/2025_PRL_voronoiModelFiniteT/reprint.pdf)
+
+
 ## 2024 
 
 [Scale-dependent sharpening of interfacial fluctuations in shape-based models of dense cellular sheets](/2024_softMatter_voronoiSurfaceFluctuations/reprint.pdf)
