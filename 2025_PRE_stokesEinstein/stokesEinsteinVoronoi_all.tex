@@ -1,0 +1,403 @@
+\documentclass[amsmath,amssymb,prl,reprint,twocolumn]{revtex4-2}
+\usepackage[rgb]{xcolor}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage{enumitem}
+\usepackage{todonotes}
+\usepackage{hyperref}
+\usepackage[capitalize]{cleveref}
+
+
+\graphicspath{{figures/}}
+
+
+
+\begin{document}
+
+\title{Tunable glassy dynamics in models of dense cellular tissue}
+
+
+\author{Helen S. Ansell}
+\affiliation{Department of Physics, Emory University, Atlanta, GA 30322, USA}
+\author{Chengling Li}
+\affiliation{Department of Physics, Emory University, Atlanta, GA 30322, USA}
+\author{Daniel M. Sussman}
+\email{daniel.m.sussman@emory.edu}
+\affiliation{Department of Physics, Emory University, Atlanta, GA 30322, USA}
+
+
+\begin{abstract} 
+Observations of glassy dynamics in dense cellular tissues have inspired a wealth of research modeling their collective behavior. 
+Initial studies of the physical properties of several geometric cell models have highlighted anomalous sub-Arrhenius, or ``ultra-strong,'' scaling of the dynamics with temperature.
+Here we show that the dynamics in this sub-Arrhenius regime deviate even further from the standard glassforming paradigm in that the models display unusual scaling of the viscosity with temperature, a lack of breakdown of the Stokes-Einstein-Sutherland relation, and strongly suppressed dynamical heterogeneities.
+The dynamics in this regime, despite not possessing these hallmarks of glassy behavior, are also distinct from those of simple liquids at low temperatures.
+These unusual dynamical behaviors can be tuned by controlling the characteristic cell shape index of the model: decreasing this parameter tunes the model between an anomalous and a standard set of glassforming dynamics.
+Our results add to the growing evidence that these geometric cell models display distinct universal features to those observed in standard glassformers.
+\end{abstract}
+
+
+\maketitle
+
+What characterizes glass formation as a fluid is cooled?
+A typical phenomenological definition is that near the glass-transition temperature, the characteristic alpha-relaxation time $\tau_{\alpha}$ and viscosity sharply increase by several orders of magnitude as the system is cooled, while the material structure remains amorphous and has only modest quantitative changes \cite{ediger1996supercooled}. 
+This is accompanied by the formation of dynamical heterogeneites (DH): increasingly large correlated regions of faster and slower moving particles~\cite{Berthier2011DHBook}.
+Here we show that a glassformer often used as a model of densely packed cellular tissue falls outside of this paradigm, exhibiting a low temperature disordered regime with slow, non-liquid-like relaxation dynamics, an only modestly changing viscosity, and a lack of DH formation.
+Varying a single characteristic parameter in the model results in a continuous crossover between this anomalous regime and a regime of standard glassforming behavior.
+
+
+Coarse-grained geometric cell models---including the Voronoi~\cite{Bi2016}, vertex~\cite{Nagai2001,Farhadifar2007,Bi2015}, and cellular Potts~\cite{Graner1992} models---have garnered much interest as a means to studying complex collective phenomena in densely packed tissues. 
+Experiments on confluent cell monolayers have suggested parallels with properties of non-living disordered systems~\cite{Angelini2011,Nnetu2012,Park2015,Park2016,Malinverno2017,Atia2018,Vishwakarma2020,Kim2020,Lin2020,Cerbino2021,Sadhukhan2024Review}; several aspects of which (such as the solid-to-fluid transition) have been successfully captured by the geometric models~\cite{Bi2015,Bi2016,Li2018,Chiang2016,Park2015,Grosser2021}.
+In addition to informing experiments, these models have unusual properties even at equilibrium.
+For instance, they have an athermal rigidity transition~\cite{Sussman2018SM,Bi2015,Teomy2018,Pinto2022} that shares interesting features with constraint-satisfaction transitions~\cite{Urbani2023}, and at finite temperature $T$ their dynamics display peculiar sub-Arrhenius (``ultra-strong'') scaling of $\tau_{\alpha}$ with $T$---a property shared (to our knowledge) only with computational models of low density vitrimeric polymer glasses~\cite{Ciarella2019}---in the parameter regime near the rigidity transition~\cite{Sussman2018EPL,Li2021,Sadhukhan2021,Li2025}. 
+While the detailed many-body nature of the interactions in these systems is surely linked to their anomalous dynamics, the basic phenomenology in this sub-Arrhenius regime is largely unknown: other than the dynamics having less temperature sensitivity, are these materials otherwise similar to other disordered glassforming systems?
+
+To better understand the fundamental phenomenology of these model materials, we combine equilibrium and nonequilibrium simulations of the ``Voronoi model'' of cells to directly measure multiple observables, and then examine the Stokes-Einstein-Sutherland (SE) relation~\cite{Einstein1905,Sutherland1905}.
+In a simple liquid the ratio $\text{SE} = D\eta/T$, where $D$ and $\eta$ are the diffusion coefficient and viscosity, is expected to remain constant as $T$ is varied.
+A hallmark of standard glassforming materials is that this relation is obeyed at high $T$ but breaks down at the onset of glassy dynamics~\cite{Rossler1990,Hodgdon1993,Ediger2000}; this breakdown is often attributed to the formation of DH.
+By studying the SE relation and making direct measurements of DH, we demonstrate that the model deviates far from those of typical glassforming materials.
+In a specific parameter regimes, we find an anomalous scaling of $\eta$ with $T$, no SE breakdown, and a corresponding lack of DH.
+Tuning a model parameter leads to a crossover to a regime where the expected SE breakdown and DH formation are observed.
+Our results provide insight into the atypical fundamental dynamical properties of this model---adding to the growing evidence that this and related geometric cell models display distinct disordered dynamics with universal features differing from those of a standard glassformer.
+
+
+%%% Figure is here to make it appear earlier in the document
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.5\textwidth]{tau-D-eta-vs-T.pdf}
+\vspace{-1.5\intextsep}
+\caption{Temperature dependence of (a) the alpha-relaxation time $\tau_{\alpha}$, (inset) the inverse of the diffusion constant $D$, and (b) the viscosity $\eta$ of the 2d Voronoi model. 
+The color scale in (a) applies to all panels. 
+Solid markers indicate that the model is in the disordered phase at the given $p_0$ and $T$ value while open markers indicate that the system has hexatic ordering. Error bars, which are typically smaller than the marker size, indicate the standard error across ten configurations.
+}
+\label{fig:T-dependence}
+\end{figure}
+
+
+\emph{The 2d Voronoi model---}We use a standard implementation of the monodisperse Voronoi model for $N$ cells in 2d under periodic boundary conditions, for which the dimensionless energy is given by~\cite{Farhadifar2007,Bi2015,Bi2016}
+\begin{equation}
+e =  \sum_{i=1}^N \left[k_r (a_i - a_{0})^2 + (p_i - p_{0})^2\right].
+\end{equation}
+Here, $a_i$ and $p_i$ are the area and perimeter of cell $i$, while $a_{0}$ and $p_{0}$ are model parameters representing a target area and perimeter. 
+We choose the unit of length, $l$, so that the average dimensionless area of a cell, $a_i = A_i/l^2$, is $\expval{a_i}=1$, and set $a_0=1$. We further set $k_r$, the constant characterizing the ratio of area to perimeter elasticity, to one.
+The shape index $p_0$ characterizes the mechanical stability of the cellular packing at zero temperature.
+In the thermodynamic limit there is a geometrical transition at a shape index of $p_c \approx 3.81$; below this value unit-area polygonal shapes tiling the plane are frustrated (and the corresponding cell packing is mechanically stable) and above it they are geometrically compatible (and the cell packing in mechanically unstable) ~\cite{Bi2015,Li2018,Urbani2023,Sussman2018SM}.
+We note that it is in this latter regime that models of real cell sheets are often parameterized~\cite{Devany2021,Armengol2023,Chisolm2024}.
+Using a monodisperse version of the model makes some measurements clearer, but it also amplifies the tendency of the model to exhibit hexatic ordering at low $p_0$~\cite{Li2018}.
+Throughout we indicate state points in the disordered regime with solid markers, while those with hexatic ordering (as determined from the location of peaks in the susceptibility of the bond orientational order parameter) are indicated with open markers.
+We do not observe the emergence of quasi long-range translational ordering in the parameter regimes studied.
+
+
+We investigate the dynamics of this model above and below $p_c$, performing simulations in the canonical (NVT) ensemble.
+Temperature is controlled via a Nos\'e-Hoover thermostat to ensure transport properties and thermodynamic distributions are preserved within the system~\cite{Basconi2013}.
+We use an integration timestep of $\dd t = 0.01\tau$, where $\tau$ is the dimensionless unit of time, and simulate $N=4096$ cells.
+All simulations were performed using the open-source cellGPU software~\cite{Sussman2017}, and the technical details of all quantities measured (including system size effects), are described in the Supplemental Material~\cite{Supp}.
+
+
+
+\emph{Temperature dependence of dynamical quantities---}The 2d Voronoi model is known to display sub-Arrhenius scaling of $\tau_{\alpha}$ with $T$ at high $p_0$ that crosses over to standard Arrhenius and super-Arrhenius behavior observed in typical glassformers as $p_0$ is decreased~\cite{Sussman2018EPL,Li2021}.
+Here we explore how other features of the dynamics vary at the crossover into this anomalous sub-Arrhenius regime, and therefore consider $p_0$ values in the range $3.75-3.85$. 
+We expect that for $p_0<3.75$ the dynamics of the model will be consistent with a standard glassformer.
+
+
+To investigate the dynamical behavior, we complement observations of $\tau_{\alpha}$ with direct measurements of both $D$ and $\eta$, respectively determined from the long-time behavior of the mean squared displacement (MSD) and via a reverse nonequilibrium molecular dynamics (RNEMD) technique~\cite{MullerPlathe1999,Kuang2012}.
+We note that while much of the phenomenology of glassy systems is expected to be similar in 2d and 3d, extra care must be taken in 2d systems due to the importance of long-wavelength Mermin-Wagner fluctuations~\cite{Flenner2015,Illing2017} and the expected presence of long-time tails in correlations functions, which in turn result in Green-Kubo formulae for transport coefficients diverging~\cite{Alder1970,Ernst1970,Dorfman1970,Forster1977}.
+We have verified that, in line with with prior reports~\cite{Gravina1995,Liu2006}, our results for $D$ and $\eta$ are consistent with those obtained using the Green-Kubo formula, and we do not observe time-dependence of the measured coefficients within the time windows studied (see Fig.~S1~\cite{Supp}).
+
+
+We simulate temperatures that span regimes from close to the onset temperature to deep within the supercooled regime, as evidenced by the behavior of the cage-relative self-intermediate scattering function (CR SISF) (see \cref{fig:CRSISF}). 
+We note that while at lower $p_0$ values, the CR SISF shows clear signatures of the two-step relaxation processes expected in a supercooled system, these distinct regimes are not so clear in the higher $p_0$, low $T$ data, providing an early indicator of unusual disordered dynamics in this regime.
+
+\Cref{fig:T-dependence}(a) shows the $T$-dependence of $\tau_{\alpha}$ determined from the CR SISF, shown on log-log axes to highlight how at higher $p_0$ values, $\tau_{\alpha}$ increases so slowly as the system is cooled that its behavior appears closer to a power law than to typical (super-)Arrhenius glassy dynamics.
+Consequently, $T$ must be reduced by several decades for $\tau_{\alpha}$ to reach a value of $\sim10^4$ (a typical time scale associated with probing computational supercooled fluids~\cite{Sussman2018EPL,Kob1995}).
+By contrast, at lower $p_0$ values a similar variation in $\tau_{\alpha}$ is observed in less than a decade of variation in $T$, as expected in a glassforming material. 
+These features are also observed in the $T$-dependence of $D^{-1}$ (\cref{fig:T-dependence}(a) inset), again demonstrating that the dynamics of the Voronoi model at higher $p_0$ values slow down much more slowly than expected in a typical glassformer, while crossing over into a regime closer to expectations for standard glassformers at lower $p_0$ values. 
+
+In a typical glassy system, $\eta$ is expected to mirror the behavior of $\tau_{\alpha}$~\cite{Berthier2011DHBook}. 
+While this is qualitatively the case in the ``standard'' low-$p_0$ regime (see \cref{fig:T-dependence}(b)), for larger $p_0$ the variation in $\eta$ is surprisingly small: the viscosity varies by more than two orders of magnitude less than $\tau_{\alpha}$ over the same range of $T$. 
+This highlights that the simplest form of the frequently used Maxwell model assumption $\tau_{\alpha}\propto\eta$~\cite{Chen2006,Kumar2007,Xu2009,Shi2013} does not hold in this model, as further illustrated in Fig.~S2(a)~\cite{Supp}.
+We note that a second frequently used approximation, $\tau_{\alpha}\propto\eta/T$~\cite{Ozawa2016,Ikeda2011PRL,Ikeda2011JChemPhys,Sengupta2013}, \emph{does} hold reasonably well in this model (see Fig.~S2(b)~\cite{Supp}), consistent with observations in standard 2d glassformers when cage-relative $\tau_{\alpha}$ values are used~\cite{Shiba2019,Li2019}.
+However, as we will show, this approximation still has important consequences for interpreting the behavior of the SE relation compared to direct $\eta$ measurements.
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.5\textwidth]{SE-nonviolation.pdf}
+\vspace{-1.5\intextsep}
+\caption{Testing the Stokes-Einstein-Sutherland (SE) relation for different $p_0$ values.
+The dashed black line indicates the slope when the SE relation holds.
+(inset) Dependence of the SE ratio ($\mathrm{SE=D\eta/T}$), scaled by a high $T$ reference value $\text{SE}_0$ for each dataset, on the characteristic relaxation time $\tau_{\alpha}$.
+Error bars in the main panel, which are typically smaller than the marker size, indicate the standard error across ten configurations, while in the inset they are propagated uncertainties from the standard errors on $D$ and $\eta$.}
+\label{fig:SE}
+\end{figure}
+
+
+\emph{Stokes-Einstein-Sutherland relation---}The breakdown of the SE relation as a system is cooled is considered a hallmark of glassy materials~\cite{Ediger2000}.
+This is often suggested to result from the formation of DH, as qualitatively $D$ is expected to be dominated by fast-moving populations of particles while $\eta$ is largely determined by slower-moving populations~\cite{Bordat2003,Sengupta2014,Pastore2015,Parmar2017}.
+Here we observe that the Voronoi model shows the expected deviation from the SE relation at lower $T$ for $p_0=3.75$ (see \cref{fig:SE}), which is consistent with the idea that the model possesses normal glassy behavior at low $p_0$.
+At higher $p_0$ values, this deviation is not present and the SE relation appears to be obeyed across the range of $T$ studied. 
+
+
+To further quantify this, we plot $\text{SE}/\text{SE}_0$, where $\text{SE}_0$ is a high $T$ reference value for each $p_0$, in the inset of \cref{fig:SE}.
+This indicates that there is slight SE violation for $p_0=3.80$ and 3.825 at the lowest $T$ values, but no deviation is observed for $p_0=3.85$ .
+We emphasize that our decision to determine $\eta$ directly has a profound impact on our conclusions here: using $\tau_{\alpha}$ as a proxy for $\eta$ or $\eta/T$ suggests much stronger SE violation across all $p_0$ values, as shown in Fig.~S2(c-d)~\cite{Supp}.
+The discrepancies between these approximations for the SE ratio and its value obtained using direct $\eta$ measurements highlight the importance of determining $\eta$ when examining SE breakdown in materials with anomalous glassy dynamics.
+
+
+\emph{Dynamical heterogeneities---} Given that SE violations are typically understood to be a consequence of DH~\cite{Ediger2000,Berthier2011DHBook}, a natural hypothesis from these results is that the high $p_0$ regime may be surprisingly dynamically \emph{homogeneous}.
+A standard quantification of the DH comes from the peak height $\chi_4^*$ of the four-point dynamic susceptibility $\chi_4(t)$.
+This is often interpreted as a characteristic volume scale of regions undergoing collective rearrangement, and is expected to grow as $\tau_{\alpha}$ increases~\cite{Berthier2011DHBook}.
+As shown in the inset of \cref{fig:dh}, $\chi_4^*$ grows slowly but distinctly with $\tau_{\alpha}$ for the lower $p_0$ values, consistent with previous observations~\cite{Sussman2018EPL,Li2021}.
+Increasing $p_0$ decreases this growth to the point that for the highest $p_0$ studied $\chi_4^*$ is always less than unity, quantitatively indicating the lack of spatially correlated dynamics at higher $p_0$ values.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{dh.pdf}
+\vspace{-1.\intextsep}
+\caption{
+Peak height of the non-Gaussian parameter $\alpha_2(t)$, and (inset) the four-point susceptibility $\chi_4(t)$ for different $p_0$ values in the Voronoi model. 
+Plot legends are as in \cref{fig:SE}.
+}
+\label{fig:dh}
+\end{figure}
+
+
+
+This observation is corroborated by studying a complementary quantity indicating DHs, the non-Gaussian parameter $\alpha_2(t)$, defined in 2d as~\cite{Rahman1964, Huang2015}
+\begin{equation}
+\alpha_2(t) = \frac{1}{2}\frac{\left<\Delta r_{\text{CR}}^4(t)\right>}{\left<\Delta r_{\text{CR}}^2(t)\right>^2}-1,
+\label{eq:alpha2}
+\end{equation}
+where $\Delta r_{\text{CR}}(t)$ is the cage-relative (CR) displacement of cells after time $t$ has elapsed.
+The quantity $\alpha_2(t)$ is zero if the distribution of particle displacements is Gaussian and nonzero otherwise.
+In a typical glassformer, $\alpha_2(t)$ has a single peak of height $\alpha_2^*$ that grows as $\tau_{\alpha}$ is increased.
+In the Voronoi model, for a given $\tau_{\alpha}$, $\alpha_2^*$ decreases as $p_0$ increases (see \cref{fig:dh}), providing further evidence of a reduction in DH as $p_0$ is increased.
+These observations may relate to the fragility of the model, as there are some indications that glass fragility is related to the level of SE breakdown and the strength of DH~\cite{Bouhadja2014,Ozawa2016}, although other systems do not show this relation~\cite{Chen2006,Jung2004,Nandi2021,Sengupta2013,Nandi2021,Dyre2007}.
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.45\textwidth]{CR-SISF.pdf}
+\vspace{-1\intextsep}
+\caption{Cage-relative self-intermediate scattering function for (a) $p_0=3.80$ and (b) $p_0=3.85$ across the full range of temperature studied for each $p_0$ value (temperature increases from blue to red).
+Data shown here is averaged across ten configurations.
+}
+\label{fig:CRSISF}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{alpha2.pdf}
+\vspace{-1.5\intextsep}
+\caption{
+Time dependence of (a) the non-Gaussian parameter $\alpha_2(t)$, (b) the cage-relative mean-squared displacement $\expval{\Delta r^2_{\text{CR}}}$, and (inset) exponent of $\expval{\Delta r^2_{\text{CR}}}\propto t^{\gamma(t)}$ for $p_0=3.85$.
+%for temperatures spanning the range of $T$ studied. 
+Colors indicate $T$, ranging from low (light blue) to high (dark red).
+Arrows indicate the time at which the second peak in $\alpha_2(t)$ occurs for low $T$.
+Dashed lines in (b) indicate $\gamma(t)=2$ in the low-$t$ regime and the superdiffusive $\gamma(t)=1.2$ regime observed for $t>\tau_{\alpha}$.
+}
+\label{fig:alpha2}
+\end{figure}
+
+\emph{Non-fluid-like behavior---}Much of the data presented thus far suggests that at low $p_0$ these geometric cell models behave like standard glassformers while at high $p_0$ their behavior is consistent with a simple fluid, obeying the SE relation and exhibiting none of the usual hallmarks of glassy dynamics even at very low $T$.
+However, looking more closely at the high-$p_0$ regime, we observe features that deviate from those of a simple fluid. 
+The slow relaxation of the CR SISF (see \cref{fig:CRSISF}) is very different to the exponential decay this quantity shows in a simple liquid. 
+Reexamining $\alpha_2(t)$, we see that at the highest $p_0$ studied, a second peak emerges at short timescales for $T\lesssim 0.005$ in addition to the expected peak at $t\sim\tau_\alpha$ (see \cref{fig:alpha2}(a)).
+To our knowledge, multiple peaks in $\alpha_2(t)$ have only previously been reported in one other recent model that aims to bridge the gap between 3d and mean-field glasses by introducing ``pseudo-neighbor'' interactions~\cite{Nandi2021}. 
+Unlike here, in those models the additional peak appeared at \emph{longer} times and \emph{higher} temperatures.
+
+
+
+
+This additional peak in $\alpha_2(t)$ suggests the presence of an additional dynamical regime at low $T$, which we explore by plotting the CR MSD in \cref{fig:alpha2}(b).
+At short timescales, this shows the expected ballistic motion, while for $t>\tau_{\alpha}$ the motion crosses over to a weakly superdiffusive regime. 
+This is likely due to caging effects~\cite{Weeks2002,Flenner2019}, and we expect that the motion will become diffusive at long enough timescales.
+Before the onset of this terminal regime, though, as the temperature is lowered a pronounced subdiffusive regime emerges for times in between the peaks of $\alpha_2(t)$.
+
+We characterize this subdiffusive regime by plotting the exponent $\expval{\Delta r^2_{CR} (t)}\propto t^{\gamma(t)}$ in the inset of \cref{fig:alpha2}(b).
+This exponent consistently reaches a minimum value of $\gamma(t) \approx 1/4$, a
+value reminiscent of scaling observed in monomer displacements in entangled linear polymer melts.
+Just as how there the scaling arises from monomers constrained to diffuse along a reduced-dimensional ``primitive path''~\cite{Rubinstein2003}, here we speculate that the unusual geometry of the zero-energy manifold of the large-$p_0$ Voronoi model may give rise to a similar effect~\cite{Pinto2022,Li2021}.
+While more work is needed to establish the mechanism leading to this subdiffusive regime, its existence highlights that the dynamics of the high-$p_0$ regime here are far from those of a simple fluid.
+
+
+\emph{Discussion---} Taken together, our results demonstrate that the high $p_0$ regime of the 2d Voronoi model has properties consistent with neither a simple fluid nor a standard glassformer:
+it has power-law scaling of its relaxation dynamics with temperature, is dynamically homogeneous, yet also has non-trivial particle-level dynamics.
+The observation of power-law scaling of dynamical quantities in this regime suggests that the model may be controlled by proximity to a (potentially zero-temperature) critical point, making an evaluation of other critical exponents a natural direction for future research.
+We further anticipate that a 3d version of this model---which would avoid some of the complexities inherent in studying 2d materials---will have similar phenomenology. If true, this suggests the need to search for the underlying mechanisms that are responsible for this unusual set of universal features.
+
+As $p_0$ is lowered, the model crosses over into a distinct regime of disordered dynamics in which the SE breakdown and behavior of the DH are consistent with observations in standard glassformers in 2d and 3d such as the Kob-Andersen model~\cite{Kob1997,Ikeda2011PRL,Sengupta2013,Shiba2019}.
+By contrast, the lack of SE breakdown and suppressed DH in the high $p_0$ regime are reminiscent of trends observed in 3d models designed to emulate mean-field type behavior~\cite{Mari2011,Nandi2021}.
+We note the importance of examining DH through both $\chi_4(t)$ and $\alpha_2(t)$, as some models, such as the Gaussian Core Model~\cite{Stillinger1976,Stillinger1979PRB,Stillinger1979JChemPhys}, can show minimal SE breakdown and small $\alpha_2^*$ values~\cite{Ikeda2011PRL}, but large growth in $\chi_4^*$ signals the presence of giant dynamical fluctuations~\cite{Coslovich2016}.
+
+
+Further theoretical insight into the DH studied here may be gained through inhomogeneous mode coupling theory (MCT) analysis~\cite{Biroli2006}, building upon recent MCT results in the vertex model~\cite{Pandey2025}.
+Recent work comparing active and equilibrium variants of standard model glassformers has shown that details of the DH can be very different despite similar relaxation dynamics between the two model variants~\cite{Paul2023}.
+As such, studying the DH in an active Voronoi model~\cite{Bi2016}, would give insight into which anomalous features of the DH are conserved across different microscopic dynamics.
+Finally, we note that DH have been reported in real cell monolayers~\cite{Angelini2011,Malinverno2017,Vishwakarma2020,Cerbino2021}, although their quantification can be complicated due to the presence of large fluctuations in cell positions and shape that often occur with comparatively few neighbor-exchange events~\cite{Angelini2011}.
+Thus, to draw a meaningful comparison between experimental results and the results presented here would require undertaking CR measurements on the real cells, separating out DH due to cell rearrangements and those due to cell-cage-scale fluctuations.
+Exploring this relationship, and the implications of our results for understanding fundamental similarities and differences between the physics underlying different cell models remain exciting directions for future work.
+
+
+
+
+\emph{Acknowledgements---}We thank Tomilola Obadiya and Eric Weeks for helpful conversations.
+HSA acknowledges funding from the Tarbutton Postdoctoral Fellowship.
+This material is based upon work supported by the National Science Foundation under Grant No. DMR-2143815.
+This research used the Delta advanced computing and data resource which is supported by the National Science Foundation (award OAC 2005572) and the State of Illinois. Delta is a joint effort of the University of Illinois Urbana-Champaign and its National Center for Supercomputing Applications.
+
+\emph{Author contributions---}HSA and DMS designed research;
+HSA and CL performed research;
+HSA, CL and DMS analyzed data;
+HSA and DMS wrote the paper.
+
+
+\bibliography{stokesEinsteinVoronoi_sources}
+
+
+% Make the supplement
+\clearpage
+\onecolumngrid
+
+
+\let\oldthefigure\thefigure
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+\makeatletter
+\renewcommand{\fnum@figure}{FIG. \thefigure}
+\makeatother
+
+
+
+\setcounter{figure}{0}
+\setcounter{page}{1}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+
+\begin{center}
+  {\large\bfseries
+  Supplemental Material: \\Tunable glassy dynamics in models of dense cellular tissue}
+  
+  \vspace{0.5cm}
+  
+  Helen S. Ansell, Chengling Li and Daniel M. Sussman\\
+  \itshape{Department of Physics, Emory University, Atlanta, GA 30322, USA}
+ \end{center}
+
+
+
+\section{Details of parameter calculations}
+
+\subsection{Alpha-relaxation time $\tau_{\alpha}$}
+When determining $\tau_{\alpha}$ and studying the DH, we use cage-relative measurements to remove the effect of the Mermin-Wagner fluctuations~\cite{Mazoyer2009,Vivek2017,Illing2017,Shiba2019}.
+We estimate $\tau_{\alpha}$ from the decay of the cage-relative self-intermediate scattering function (CR SISF), which is given by
+\begin{equation}
+F_{s}^{CR}(q,t) = \frac{1}{N} \sum_{i=1}^N \expval{\mathrm{e}^{i\vb{q}\vdot[\Delta\vb{r}_i(t)-\Delta\vb{r}_i^{\text{cage}}(t)]}},
+\end{equation}
+where $\Delta\vb{r}_i(t)=\vb{r}_i(t)-\vb{r}_i(0)$, $\Delta\vb{r}_i^{\text{cage}} = \frac{1}{N_i}\sum_{j=1}^{N_i}[\vb{r}_j(t)-\vb{r}_j(0)]$  gives the displacement of the cage formed by the $N_i$ neighbors of particle $i$ at $t=0$, and $q = \abs{\vb{q}}$ is the position of the peak in the static structure factor.
+The value of $\tau_{\alpha}$ is estimated by fitting a stretched exponential of the form $A\exp(-t/\tau_{\alpha})^{\beta}$ to the long-time tail of $F_s(q,t)$, where $\tau_{\alpha}$, $A$ and $\beta$ are fitting parameters.
+The final value for each $\tau_{\alpha}$ is then obtained by averaging the fit values across ten configurations for each state point.
+We investigate a range of temperatures at each $p_0$ that correspond to $1\lesssim\tau_{\alpha}\lesssim10^4$.
+
+
+
+
+
+
+\subsection{Self-diffusion constant $D$}
+We obtain the self-diffusion constant $D$ from the mean-squared displacement (MSD), $\Delta(t) = \expval{\Delta r^2(t)}$, which at long times obeys
+\begin{equation}
+    \Delta (t) \sim 2 d D t,
+\end{equation}
+with $d$ being the dimension of the system. 
+We calculate the MSD at time $t=t_{\text{max}}$, with $t_{\text{max}}\geq 10\tau_{\alpha}$ being the duration of the simulation after an initial thermalization period (which is itself of order $10\tau_{\alpha}$), and use this to estimate $D$ for a single configuration. 
+The final $D$ estimate is determined from the mean value from ten configurations at each state point.
+
+We use the standard MSD because it reaches the diffusive regime within our simulations, unlike the CR MSD (as discussed in the main text).
+At long time scales, the standard and CR MSDs are expected to asymptotically approach the same values, leading to the same estimate for $D$~\cite{Flenner2019,Shiba2019}.
+
+To determine the influence of finite-size effects, which may be present due to Mermin-Wagner fluctuations, we have calculated $D$ for select state points for system sizes ranging from $N=128$ up to $N=32\,768$. 
+Consistent with prior results on 2d systems~\cite{Choi2017,Shiba2019}, we observe that $D$ increases logarithmically with system size.
+However, given that the temperature dependence of $D$ is similar across system sizes, it is still meaningful to examine $D$ and the SE ratio in 2d~\cite{Shiba2019}.
+
+
+
+
+\subsection{Viscosity $\eta$}
+We measure the viscosity $\eta$ using a reverse nonequilibrium molecular dynamics (RNEMD) technique~\cite{MullerPlathe1997,MullerPlathe1999, Kuang2010,Kuang2012}.
+In this approach, the system is divided into horizontal slabs and an unphysical momentum flux $j_y(p_x)$ is imposed in the forward direction on the central slab and in the backward direction on the bottom slab.
+This induces a gradient along the $y$ direction in the $x$ component of the velocity $v_x$.
+The fluxes are chosen to ensure that the linear momentum and kinetic energy are conserved throughout the system.
+The viscosity is determined as $\eta=-j_y(p_x)/\pdv{v_x}{y}$.
+We implement the velocity shearing and scaling (VSS) RNEMD method~\cite{Kuang2012}, 
+which reduces perturbations compared to earlier RNEMD methods by distributing the momentum flux across all particles in the manipulated slab.
+We set the momentum swap frequency to $f=5\dd t$ and have verified that the results are consistent across a range of choices of $f$.
+To allow the velocity profile to develop, we run simulations for $50\,000\tau$ from a thermalized configuration before determining $\eta$ by averaging $\pdv{v_x}{y}$ over a duration of at least $60\,000\tau$, which we find is a long enough time scale for the measured viscosity to reach a stable plateau as a function of measurement time.
+
+We determine $\eta$ for each $p_0$ and $T$ by sampling at least four fluxes in the range $10^{-5}\lesssim j_y(p_x) \lesssim 10^{-3}$ with the value of $\eta$ at each state point averaged across ten configurations.
+For state points where there is no hexatic ordering present in the absence of applied flux, we observe regimes of Newtonian flow at small values of $j_y(p_x)$, and determine the final estimate for $\eta$ by averaging across its value across at least four $j_y(p_x)$ values within the Newtonian regime.
+The parameters where hexatic ordering is present in the absence of applied flux typically coincide with a regime that displays a yield stress within the range of $j_y(p_x)$ values studied.
+As $j_y(p_x)$ is increased above the yield stress, the system displays non-Newtonian shear thinnning.
+In these cases, the reported $\eta$ value is for the lowest $j_y(p_x)$ that resulted in a measurable $\eta$ value, averaged across ten configurations.
+For $p_0\leq 3.80$, the yield stress is $\lesssim10^{-4}$.
+For $p_0=3.75$ at the lowest temperate the yield stress is $\sim 10^{-3}$ and the shear thinning is very pronounced, meaning that a small increase in the applied momentum flux can induce a large change in the apparent viscosity (e.g. near yielding, a 5\% decrease in the applied flux leads to a $\sim 150\%$ increase in the apparent viscosity).
+As such, while we have made a reasonable effort to determine the viscosity at the yield point, the true yield stress viscosity may be higher.
+
+As for $D$, we have examined the system size dependence of $\eta$, and find that there is no clear scaling of $\eta$ with system size, consistent with other 2d systems~\cite{Choi2017,Shiba2019}.
+
+
+
+\subsection{Four-point susceptibility $\chi_4(t)$}
+The four-point dynamic susceptibility $\chi_4(t)$ is defined by
+\begin{equation}
+\chi_4(t) = N \expval{\delta F_s^{\text{CR}}(\vb{q},t)\delta F_s^{\text{CR}}(\vb{q},t)},
+\end{equation}
+where $\delta F_s^{\text{CR}}(\vb{q},t)$ is the difference between the instantaneous CR SISF and its mean, and the value of $\vb{q}$ used corresponds to the maximum of the static structure factor~\cite{Szamel2006}.
+
+\subsection{CR MSD $\expval{\Delta r^2_{CR} (t)}$}
+The cage-relative mean-squared displacement (CR MSD) is defined by~\cite{Mazoyer2009}
+\begin{equation}
+   \expval{\Delta r^2_{CR} (t)} = \frac{1}{N}\expval{\sum_{i=1}^N\left[\Delta\vb{r}_i(t)-\Delta\vb{r}_i^{\text{cage}}(t)\right]^2},
+\end{equation}
+where $\expval{\quad}$ denotes averaging across configurations.
+Results for the CR MSD are averaged across ten configurations at each $T$ and $p_0$.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.45\textwidth]{green-kubo.pdf}
+\vspace{-1\intextsep}
+\caption{Determining transport coefficients using the Green-Kubo formula.
+(a) Shear stress autocorrelation function $C_{SS}$, and (b) velocity autocorrelation function $C_{VV}$ for $p_0=3.75$, $T=0.02$. Plot markers show individual data points while the dashed lines show the numerical interpolation between points. Note that the interpolation becomes disconnected at larger $t$ due to the measured $C_{SS}$ and $C_{VV}$ fluctuations fluctuating around zero.
+The insets respectively show the measured viscosity and diffusivity as a function of the upper limit on the integration time $t_{\text{max}}$.
+The dashed black lines show the corresponding estimates for these quantities obtained from the RNEMD measurement and MSD respectively.
+}
+\label{fig:green-kubo}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{eta-tau-alpha-relations-SE-variations.pdf}
+\vspace{-.5\intextsep}
+\caption{(a-b) Dependence of (a) the viscosity $\eta$ and (b) the ratio $\eta/T$ on the alpha-relaxation time $\tau_{\alpha}$ for different values of the characteristic shape index $p_0$. 
+(c-d) Using (c) $\tau_{\alpha}$ instead of $\eta$ in the SE ratio (note the logarithmic axis scale), or 
+(d) replacing $\eta/T$ with $\tau_{\alpha}$ would indicate stronger SE violations than are observed when the direct viscosity measurement is used (see \cref{fig:SE} of the main text). 
+The color panel in (a) applies to all figures.
+Error bars in (a-b), which are typically smaller than the marker size, indicate the standard error across ten configurations, while in (c-d) they represent propagated uncertainties from the standard errors on the individual measurements.
+}
+\label{fig:eta-tau-SE-supp}
+\end{figure}
+
+
+
+\end{document}
+

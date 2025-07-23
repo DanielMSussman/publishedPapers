@@ -2,6 +2,8 @@ Below you will find direct links to pdfs of papers, listed by title and organize
 
 ## 2025
 
+[Tunable glassy dynamics in models of dense cellular tissue](/2025_PRE_stokesEinstein/stokesEinsteinVoronoi_all.pdf)
+
 [Banded phases in topological flocks](/2025_softMatter_voronoiBandingFlocks/reprint.pdf)
 
 [curvedSpaceSim: A framework for simulating particles interacting along geodesics](/2025_CompPhysComm_curvedSpaceSim/reprint.pdf)
